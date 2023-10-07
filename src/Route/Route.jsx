@@ -4,6 +4,7 @@ import Home from "../pages/Home/Home";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Register from "../pages/Register/Register";
 import LogIn from "../pages/LogIn/LogIn";
+import JobDetails from "../pages/JobDetails/JobDetails";
 
 const router = createBrowserRouter([
     {
@@ -14,6 +15,15 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home />,
+            },
+            {
+                path: "/jobDetails/:id",
+                element: <JobDetails />,
+                loader: async ({ params }) => {
+                    const res = await fetch("/jobs_all.json");
+                    const data = await res.json();
+                    return data.find(job => job.id === params.id);
+                }
             },
             {
                 path: "/profile",
