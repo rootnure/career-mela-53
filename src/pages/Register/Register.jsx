@@ -1,8 +1,24 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
+import { BsFillEyeFill, BsFillEyeSlashFill } from "react-icons/bs";
+import { useState } from "react";
 
 
 const Register = () => {
+
+    const [isPasswordVisible, setIsPasswordVisible] = useState(false);
+    const [errorMsg, setErrorMsg] = useState("");
+
+    const handleValidPassword = (e) => {
+        setErrorMsg("");
+        const password = e.target.value;
+        console.log(password);
+        if (password.length === 0) setErrorMsg("");
+        else if (password.length < 6) setErrorMsg("Password must be at lest 6 character long");
+        else if (!/[A-Z]/.test(password)) setErrorMsg("Password must contain at lest one UPPERCASE letter");
+        else if (!/[!@#$%^&*()_+\-=[\]{};'~`:"\\|,.<>/?]/.test(password)) setErrorMsg("Password must contain at lest one special character");
+    }
+
     return (
         <div>
             <Helmet>
@@ -38,13 +54,16 @@ const Register = () => {
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input type="password" name="password" placeholder="Password" className="input input-bordered" required />
-                                <label className="label">
-                                    <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+                                <div className="relative">
+                                    <input onChange={handleValidPassword} type={isPasswordVisible ? "text" : "password"} name="password" placeholder="Password" className="input input-bordered w-full" required />
+                                    <span onClick={() => setIsPasswordVisible(!isPasswordVisible)} className="absolute top-0 bottom-0 right-0 px-3 flex items-center cursor-pointer">{isPasswordVisible ? <BsFillEyeFill></BsFillEyeFill> : <BsFillEyeSlashFill></BsFillEyeSlashFill>}</span>
+                                </div>
+                                <label className="label relative">
+                                    {errorMsg && <small className="absolute top-3 text-red-400 font-semibold">{errorMsg}</small>}
                                 </label>
                             </div>
                             <div className="form-control mt-6">
-                                <button className="btn btn-primary">Login</button>
+                                <button type="submit" className="btn btn-primary">Register</button>
                             </div>
                             <p className="text-center">Already have an account? <Link to="/login" className="underline">Login</Link></p>
                         </form>

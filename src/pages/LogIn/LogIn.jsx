@@ -32,7 +32,7 @@ const LogIn = () => {
                                     <span className="label-text">Password</span>
                                 </label>
                                 <div className="relative">
-                                    <input type="password" name="password" placeholder="Password" className="input input-bordered w-full" required />
+                                    <input type={isPasswordVisible ? "text" : "password"} name="password" placeholder="Password" className="input input-bordered w-full" required />
                                     <span onClick={() => setIsPasswordVisible(!isPasswordVisible)} className="absolute top-0 bottom-0 right-0 px-3 flex items-center cursor-pointer">{isPasswordVisible ? <BsFillEyeFill></BsFillEyeFill> : <BsFillEyeSlashFill></BsFillEyeSlashFill>}</span>
                                 </div>
                                 <label className="label">
