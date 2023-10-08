@@ -5,14 +5,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const Service = ({ service }) => {
 
-    // const navigate = useNavigate();
-
     const { id, img, title, type, short_description, registration_fee } = service;
-
-    // const handleViewDetails = () => {
-    //     navigate(`/serviceDetails/${id}`);
-    //     // console.log(`/serviceDetails/${id}`);
-    // }
 
     return (
         <>
@@ -35,7 +28,7 @@ const Service = ({ service }) => {
                         </div>
                     </div>
                     <div className="card-actions justify-end">
-                        <Link to={`/serviceDetails/${id}`}><button className="my-btn bg-gradient-to-l hover:bg-gradient-to-r from-cyan-50 to-cyan-100 transition-colors duration-1000">View Details <span><FaArrowRight></FaArrowRight></span></button></Link>
+                        <Link to={`/serviceDetails/${id}`}><button className="my-btn bg-gradient-to-r hover:bg-gradient-to-l rounded font-semibold from-cyan-50 to-cyan-100 transition-colors duration-1000">View Details <span><FaArrowRight></FaArrowRight></span></button></Link>
                     </div>
                 </div>
             </div>

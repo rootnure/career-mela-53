@@ -2,79 +2,6 @@
     "services": [
         {
             "id": 1,
-            "img": "https://i.ibb.co/Vw52NGn/bootcamp.jpg",
-            "title": "Digital Marketing Bootcamp",
-            "type": "Bootcamp",
-            "details_description": {
-                "intro": "Bootcamps have gained significant popularity in the educational and training landscape due to their unique characteristics and benefits. Here are some of the key reasons why bootcamps are important in educational and training purposes:",
-                "body": [
-                    {
-                        "title": "Intensive Learning",
-                        "description": "Bootcamps are designed to provide a concentrated and immersive learning experience. They typically cover a substantial amount of material in a short period, allowing participants to acquire new skills quickly."
-                    },
-                    {
-                        "title": "Skill-Based Training",
-                        "description": "Bootcamps are often focused on specific skills or industries, such as coding, data science, digital marketing, or cybersecurity. Participants can gain practical, job-relevant skills in a short timeframe."
-                    },
-                    {
-                        "title": "Career Acceleration",
-                        "description": "Bootcamps are particularly beneficial for individuals looking to transition into new careers or upskill within their current profession. They offer a fast track to gaining the skills required for in-demand jobs."
-                    },
-                    {
-                        "title": "Hands-On Experience",
-                        "description": "Many bootcamps emphasize hands-on learning through projects, labs, and real-world simulations. This approach ensures that participants can apply what they learn in practical scenarios."
-                    },
-                    {
-                        "title": "Expert Instruction",
-                        "description": "Bootcamps are typically taught by industry professionals or experts in the field. Participants benefit from the knowledge and insights of experienced instructors."
-                    },
-                    {
-                        "title": "Structured Curriculum",
-                        "description": "Bootcamps provide a structured curriculum, which is essential for learners who prefer a clear learning path and defined objectives."
-                    },
-                    {
-                        "title": "Small Class Sizes",
-                        "description": "Bootcamp class sizes are often limited to ensure personalized attention and an interactive learning environment, promoting active engagement and understanding."
-                    },
-                    {
-                        "title": "Job Placement Support",
-                        "description": "Many bootcamps offer job placement assistance, including resume building, interview preparation, and access to employer networks. This can significantly improve participants' job prospects."
-                    },
-                    {
-                        "title": "Networking Opportunities",
-                        "description": "Bootcamps bring together individuals with similar career goals and interests. Participants can network with peers, instructors, and industry professionals, expanding their professional connections."
-                    },
-                    {
-                        "title": "Flexible Learning Formats",
-                        "description": "Bootcamps are offered in various formats, including in-person, online, and hybrid options. This flexibility accommodates different learning preferences and geographic locations."
-                    },
-                    {
-                        "title": "Industry-Relevant Curriculum",
-                        "description": "Bootcamps often collaborate with industry partners to ensure that the curriculum reflects current trends, tools, and technologies. This makes graduates more marketable to employers."
-                    },
-                    {
-                        "title": "Short Duration",
-                        "description": "Bootcamps typically have a shorter duration compared to traditional educational programs, making them accessible to individuals who want to quickly gain specific skills or certifications."
-                    },
-                    {
-                        "title": "Portfolio Building",
-                        "description": "Participants in bootcamps often build portfolios of projects that showcase their skills to potential employers. This practical experience is valuable when seeking employment."
-                    },
-                    {
-                        "title": "Cost-Effective",
-                        "description": "While bootcamps may have a tuition fee, they are generally more affordable and time-efficient than pursuing a full-length degree program."
-                    },
-                    {
-                        "title": "Continuous Learning",
-                        "description": "Bootcamps encourage a culture of continuous learning and skill development, which is essential in fast-paced industries where technology and knowledge evolve rapidly."
-                    }
-                ],
-                "summary": "In summary, bootcamps offer a focused, practical, and accelerated approach to learning and skill development. They are particularly well-suited for individuals seeking rapid career advancement, industry-specific expertise, or a way to bridge the gap between their current skills and emerging job market demands."
-            },
-            "registration_fee": "free workshop"
-        },
-        {
-            "id": 2,
             "img": "https://i.ibb.co/D9v6Vd3/workshop.jpg",
             "title": "Web Development Workshop",
             "type": "Workshop",
@@ -143,6 +70,79 @@
                     }
                 ],
                 "summary": "In summary, workshops are a valuable tool for educational and training purposes because they offer active, engaging, and practical learning experiences that help individuals acquire new skills, enhance existing knowledge, and achieve specific learning objectives."
+            },
+            "registration_fee": "free workshop"
+        },
+        {
+            "id": 2,
+            "img": "https://i.ibb.co/Vw52NGn/bootcamp.jpg",
+            "title": "Digital Marketing Bootcamp",
+            "type": "Bootcamp",
+            "details_description": {
+                "intro": "Bootcamps have gained significant popularity in the educational and training landscape due to their unique characteristics and benefits. Here are some of the key reasons why bootcamps are important in educational and training purposes:",
+                "body": [
+                    {
+                        "title": "Intensive Learning",
+                        "description": "Bootcamps are designed to provide a concentrated and immersive learning experience. They typically cover a substantial amount of material in a short period, allowing participants to acquire new skills quickly."
+                    },
+                    {
+                        "title": "Skill-Based Training",
+                        "description": "Bootcamps are often focused on specific skills or industries, such as coding, data science, digital marketing, or cybersecurity. Participants can gain practical, job-relevant skills in a short timeframe."
+                    },
+                    {
+                        "title": "Career Acceleration",
+                        "description": "Bootcamps are particularly beneficial for individuals looking to transition into new careers or upskill within their current profession. They offer a fast track to gaining the skills required for in-demand jobs."
+                    },
+                    {
+                        "title": "Hands-On Experience",
+                        "description": "Many bootcamps emphasize hands-on learning through projects, labs, and real-world simulations. This approach ensures that participants can apply what they learn in practical scenarios."
+                    },
+                    {
+                        "title": "Expert Instruction",
+                        "description": "Bootcamps are typically taught by industry professionals or experts in the field. Participants benefit from the knowledge and insights of experienced instructors."
+                    },
+                    {
+                        "title": "Structured Curriculum",
+                        "description": "Bootcamps provide a structured curriculum, which is essential for learners who prefer a clear learning path and defined objectives."
+                    },
+                    {
+                        "title": "Small Class Sizes",
+                        "description": "Bootcamp class sizes are often limited to ensure personalized attention and an interactive learning environment, promoting active engagement and understanding."
+                    },
+                    {
+                        "title": "Job Placement Support",
+                        "description": "Many bootcamps offer job placement assistance, including resume building, interview preparation, and access to employer networks. This can significantly improve participants' job prospects."
+                    },
+                    {
+                        "title": "Networking Opportunities",
+                        "description": "Bootcamps bring together individuals with similar career goals and interests. Participants can network with peers, instructors, and industry professionals, expanding their professional connections."
+                    },
+                    {
+                        "title": "Flexible Learning Formats",
+                        "description": "Bootcamps are offered in various formats, including in-person, online, and hybrid options. This flexibility accommodates different learning preferences and geographic locations."
+                    },
+                    {
+                        "title": "Industry-Relevant Curriculum",
+                        "description": "Bootcamps often collaborate with industry partners to ensure that the curriculum reflects current trends, tools, and technologies. This makes graduates more marketable to employers."
+                    },
+                    {
+                        "title": "Short Duration",
+                        "description": "Bootcamps typically have a shorter duration compared to traditional educational programs, making them accessible to individuals who want to quickly gain specific skills or certifications."
+                    },
+                    {
+                        "title": "Portfolio Building",
+                        "description": "Participants in bootcamps often build portfolios of projects that showcase their skills to potential employers. This practical experience is valuable when seeking employment."
+                    },
+                    {
+                        "title": "Cost-Effective",
+                        "description": "While bootcamps may have a tuition fee, they are generally more affordable and time-efficient than pursuing a full-length degree program."
+                    },
+                    {
+                        "title": "Continuous Learning",
+                        "description": "Bootcamps encourage a culture of continuous learning and skill development, which is essential in fast-paced industries where technology and knowledge evolve rapidly."
+                    }
+                ],
+                "summary": "In summary, bootcamps offer a focused, practical, and accelerated approach to learning and skill development. They are particularly well-suited for individuals seeking rapid career advancement, industry-specific expertise, or a way to bridge the gap between their current skills and emerging job market demands."
             },
             "registration_fee": "$150 - $250 per bootcamp"
         },
