@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import Header from "../../components/Header/Header";
-import Jobs from "../../components/Jobs/Jobs";
+import Services from "../../components/Services/Services";
 
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
             <Header></Header>
             <div className="container mx-auto">
                 <div className="grid grid-cols-4 my-12">
-                    <Jobs></Jobs>
+                    <Services></Services>
                     {/* aside */}
                 </div>
             </div>

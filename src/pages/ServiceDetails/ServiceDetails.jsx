@@ -1,7 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 
 
-const JobDetails = () => {
+const ServiceDetails = () => {
 
     const job = useLoaderData();
 
@@ -14,4 +14,4 @@ const JobDetails = () => {
     );
 };
 
-export default JobDetails;
+export default ServiceDetails;

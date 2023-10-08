@@ -4,7 +4,7 @@ import Home from "../pages/Home/Home";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Register from "../pages/Register/Register";
 import LogIn from "../pages/LogIn/LogIn";
-import JobDetails from "../pages/JobDetails/JobDetails";
+import ServiceDetails from "../pages/ServiceDetails/ServiceDetails";
 
 const router = createBrowserRouter([
     {
@@ -17,12 +17,14 @@ const router = createBrowserRouter([
                 element: <Home />,
             },
             {
-                path: "/jobDetails/:id",
-                element: <JobDetails />,
+                path: "/serviceDetails/:id",
+                element: <ServiceDetails />,
                 loader: async ({ params }) => {
-                    const res = await fetch("/jobs_all.json");
+                    const res = await fetch("/servicesDetails.json");
                     const data = await res.json();
-                    return data.find(job => job.id === params.id);
+                    const services = data.services;
+                    console.log(services);
+                    return services.find(service => service.id == params.id);
                 }
             },
             {
