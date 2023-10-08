@@ -13,3 +13,16 @@
 .my-btn:hover span {
     transform: rotate(-45deg);
 }
+
+.card .absolute.bg-gradient-to-r {
+    visibility: hidden;
+    bottom: -60px;
+    opacity: 0;
+    transition: visibility 0s, bottom 0.25s, opacity 0.25s linear;
+}
+
+.card:hover .absolute.bg-gradient-to-r {
+    visibility: visible;
+    bottom: -20px;
+    opacity: 1;
+}

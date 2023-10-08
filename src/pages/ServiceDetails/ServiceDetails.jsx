@@ -1,15 +1,19 @@
+import { Helmet } from "react-helmet-async";
 import { useLoaderData } from "react-router-dom";
 
 
 const ServiceDetails = () => {
 
-    const job = useLoaderData();
+    const service = useLoaderData();
 
-    console.log(job);
+    console.log(service);
 
     return (
         <section className="container mx-auto">
-            <h3>Job Details</h3>
+            <Helmet>
+                <title>{service.title} Details | Career Mela</title>
+            </Helmet>
+            <h3>Service Details</h3>
         </section>
     );
 };

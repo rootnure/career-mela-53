@@ -23,7 +23,6 @@ const router = createBrowserRouter([
                     const res = await fetch("/servicesDetails.json");
                     const data = await res.json();
                     const services = data.services;
-                    console.log(services);
                     return services.find(service => service.id == params.id);
                 }
             },

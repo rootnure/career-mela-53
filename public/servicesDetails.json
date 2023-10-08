@@ -2,10 +2,9 @@
     "services": [
         {
             "id": 1,
-            "img": "https://example.com/event1.jpg",
+            "img": "https://i.ibb.co/Vw52NGn/bootcamp.jpg",
             "title": "Digital Marketing Bootcamp",
             "type": "Bootcamp",
-            "short_description": "Intensive bootcamp to master digital marketing strategies.",
             "details_description": {
                 "intro": "Bootcamps have gained significant popularity in the educational and training landscape due to their unique characteristics and benefits. Here are some of the key reasons why bootcamps are important in educational and training purposes:",
                 "body": [
@@ -72,14 +71,13 @@
                 ],
                 "summary": "In summary, bootcamps offer a focused, practical, and accelerated approach to learning and skill development. They are particularly well-suited for individuals seeking rapid career advancement, industry-specific expertise, or a way to bridge the gap between their current skills and emerging job market demands."
             },
-            "registration_cost": "$150 - $250 per course"
+            "registration_fee": "free workshop"
         },
         {
             "id": 2,
-            "img": "https://example.com/event2.jpg",
+            "img": "https://i.ibb.co/D9v6Vd3/workshop.jpg",
             "title": "Web Development Workshop",
             "type": "Workshop",
-            "short_description": "Hands-on workshop to learn web development basics.",
             "details_description": {
                 "intro": "Workshops serve a valuable purpose in the field of education and training. They offer several benefits for both educators and learners, making them a crucial component of educational and training programs. Here are some reasons why workshops are important in educational and training contexts:",
                 "body": [
@@ -146,14 +144,13 @@
                 ],
                 "summary": "In summary, workshops are a valuable tool for educational and training purposes because they offer active, engaging, and practical learning experiences that help individuals acquire new skills, enhance existing knowledge, and achieve specific learning objectives."
             },
-            "registration_cost": "$150 - $300 per course"
+            "registration_fee": "$150 - $250 per bootcamp"
         },
         {
             "id": 3,
-            "img": "https://example.com/event3.jpg",
+            "img": "https://i.ibb.co/5WjbdfG/seminar.jpg",
             "title": "Leadership Training Seminar",
             "type": "Seminar",
-            "short_description": "Enhance your leadership skills in this insightful seminar.",
             "details_description": {
                 "intro": "Seminars play a significant role in educational and training contexts and offer several benefits for both participants and organizers. Here are some key reasons why seminars are essential in educational and training programs:",
                 "body": [
@@ -220,14 +217,13 @@
                 ],
                 "summary": "In summary, seminars serve as a valuable component of educational and training programs by offering opportunities for knowledge sharing, skill development, networking, and professional growth. They provide a focused and interactive learning experience that can benefit individuals across various industries and career stages."
             },
-            "registration_cost": "$200 - $500 per course"
+            "registration_fee": "$200 - $500 per seminar"
         },
         {
             "id": 4,
-            "img": "https://example.com/event4.jpg",
+            "img": "https://i.ibb.co/Wc3Vjmc/webinar.jpg",
             "title": "Data Science Webinar",
             "type": "Webinar",
-            "short_description": "Explore the world of data science in this informative webinar.",
             "details_description": {
                 "intro": "Webinars are a valuable tool in educational and training purposes, offering several benefits for both learners and educators. Here are some key reasons why webinars are essential in educational and training contexts:",
                 "body": [
@@ -294,14 +290,13 @@
                 ],
                 "summary": "In summary, webinars are a versatile and effective tool for educational and training purposes, offering accessibility, convenience, interactivity, and the ability to connect learners with experts and content from around the world. They complement traditional learning methods and play a crucial role in lifelong learning and professional development."
             },
-            "registration_cost": "$100 - $300 per course"
+            "registration_fee": "$100 - $300 per webinar"
         },
         {
             "id": 5,
-            "img": "https://example.com/event5.jpg",
+            "img": "https://i.ibb.co/w4XfmtF/training.jpg",
             "title": "Machine Learning Training Program",
             "type": "Training Program",
-            "short_description": "Comprehensive program to become a machine learning expert.",
             "details_description": {
                 "intro": "Training programs are essential in educational and training contexts for a variety of reasons. They offer structured and organized approaches to skill development, knowledge acquisition, and personal growth. Here are some key reasons why training programs are important:",
                 "body": [
@@ -372,14 +367,13 @@
                 ],
                 "summary": "In summary, training programs play a vital role in educational and training contexts by offering a structured and effective way for individuals to develop skills, acquire knowledge, advance their careers, and adapt to changing environments. They are a valuable tool for both personal and professional growth."
             },
-            "registration_cost": "$450 - $1000 per course"
+            "registration_fee": "$450 - $1000 per course"
         },
         {
             "id": 6,
-            "img": "https://example.com/event6.jpg",
+            "img": "https://i.ibb.co/sWPQY6F/job-placement.jpg",
             "title": "Job Placement Workshop",
             "type": "Job Placement",
-            "short_description": "Get job placement assistance and career guidance.",
             "details_description": {
                 "intro": "Job placement services are an essential component of educational and training programs, especially in contexts where the primary goal is to prepare individuals for employment. Here are several reasons why job placement services are crucial in educational and training programs:",
                 "body": [
@@ -446,7 +440,7 @@
                 ],
                 "summary": "In summary, job placement services are a vital link between education or training programs and the job market. They bridge the gap between learning and employment, increasing the chances of program participants finding suitable and fulfilling careers. These services play a pivotal role in the success and impact of educational and training programs."
             },
-            "registration_cost": "$300 - $600 per course"
+            "registration_fee": "Free (Reward upon Task)"
         }
     ]
 }

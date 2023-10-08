@@ -2,39 +2,39 @@
     "services": [
         {
             "id": 1,
-            "img": "https://example.com/event1.jpg",
-            "title": "Digital Marketing Bootcamp",
-            "type": "Bootcamp",
-            "short_description": "Intensive bootcamp to master digital marketing strategies.",
-            "registration_fee": "$150 - $250 per course"
-        },
-        {
-            "id": 2,
-            "img": "https://example.com/event2.jpg",
+            "img": "https://i.ibb.co/D9v6Vd3/workshop.jpg",
             "title": "Web Development Workshop",
             "type": "Workshop",
             "short_description": "Hands-on workshop to learn web development basics.",
-            "registration_fee": "$150 - $300 per course"
+            "registration_fee": "free workshop"
+        },
+        {
+            "id": 2,
+            "img": "https://i.ibb.co/Vw52NGn/bootcamp.jpg",
+            "title": "Digital Marketing Bootcamp",
+            "type": "Bootcamp",
+            "short_description": "Intensive bootcamp to master digital marketing strategies.",
+            "registration_fee": "$150 - $250 per bootcamp"
         },
         {
             "id": 3,
-            "img": "https://example.com/event3.jpg",
+            "img": "https://i.ibb.co/5WjbdfG/seminar.jpg",
             "title": "Leadership Training Seminar",
             "type": "Seminar",
             "short_description": "Enhance your leadership skills in this insightful seminar.",
-            "registration_fee": "$200 - $500 per course"
+            "registration_fee": "$200 - $500 per seminar"
         },
         {
             "id": 4,
-            "img": "https://example.com/event4.jpg",
+            "img": "https://i.ibb.co/Wc3Vjmc/webinar.jpg",
             "title": "Data Science Webinar",
             "type": "Webinar",
             "short_description": "Explore the world of data science in this informative webinar.",
-            "registration_fee": "$100 - $300 per course"
+            "registration_fee": "$100 - $300 per webinar"
         },
         {
             "id": 5,
-            "img": "https://example.com/event5.jpg",
+            "img": "https://i.ibb.co/w4XfmtF/training.jpg",
             "title": "Machine Learning Training Program",
             "type": "Training Program",
             "short_description": "Comprehensive program to become a machine learning expert.",
@@ -42,11 +42,11 @@
         },
         {
             "id": 6,
-            "img": "https://example.com/event6.jpg",
+            "img": "https://i.ibb.co/sWPQY6F/job-placement.jpg",
             "title": "Job Placement Workshop",
             "type": "Job Placement",
             "short_description": "Get job placement assistance and career guidance.",
-            "registration_fee": "$300 - $600 per course"
+            "registration_fee": "Free (Reward upon Task)"
         }
     ]
 }
