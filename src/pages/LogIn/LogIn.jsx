@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { BsFillEyeFill, BsFillEyeSlashFill } from "react-icons/bs";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
@@ -10,6 +10,10 @@ import SocialLogin2 from "./SocialLogin2";
 const LogIn = () => {
 
     const { signIn } = useContext(AuthContext);
+
+    const location = useLocation();
+
+    console.log(location);
 
     const [isPasswordVisible, setIsPasswordVisible] = useState(false);
 
@@ -25,7 +29,7 @@ const LogIn = () => {
             .then(() => {
                 loadingText.classList.add('hidden');
                 toast.success('Successfully logged in');
-                navigate("/");
+                navigate(location?.state ? location.state : "/");
             })
             .catch(err => console.error(err))
     }

@@ -3,7 +3,6 @@ import Header from "../../components/Header/Header";
 import Services from "../../components/Services/Services";
 import RightSidebar from "../../components/RightSidebar/RightSidebar";
 import 'react-toastify/dist/ReactToastify.css';
-import { ToastContainer } from "react-toastify";
 
 
 const Home = () => {
@@ -19,18 +18,6 @@ const Home = () => {
                     <RightSidebar></RightSidebar>
                 </div>
             </div>
-            <ToastContainer
-                position="top-right"
-                autoClose={3500}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss={false}
-                draggable={false}
-                pauseOnHover
-                theme="colored"
-            />
         </div>
     );
 };
