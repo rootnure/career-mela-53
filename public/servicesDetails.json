@@ -3,294 +3,33 @@
         {
             "id": 1,
             "img": "https://i.ibb.co/D9v6Vd3/workshop.jpg",
-            "title": "Web Development Workshop",
             "type": "Workshop",
-            "details_description": {
-                "intro": "Workshops serve a valuable purpose in the field of education and training. They offer several benefits for both educators and learners, making them a crucial component of educational and training programs. Here are some reasons why workshops are important in educational and training contexts:",
-                "body": [
-                    {
-                        "title": "Hands-On Learning",
-                        "description": "Workshops provide a practical and hands-on learning experience. Participants have the opportunity to apply theoretical knowledge to real-world situations, which enhances their understanding and retention of the material."
-                    },
-                    {
-                        "title": "Interactive Learning",
-                        "description": "Workshops encourage interaction and active participation. They often involve group activities, discussions, and problem-solving exercises, fostering collaboration and engagement among participants."
-                    },
-                    {
-                        "title": "Skill Development",
-                        "description": "Workshops are an effective way to develop specific skills. Whether it's technical skills, soft skills, or specialized competencies, participants can gain practical expertise through workshops."
-                    },
-                    {
-                        "title": "Customized Content",
-                        "description": "Workshops can be tailored to address specific learning objectives or skills gaps. This flexibility allows educators and trainers to design workshops that meet the unique needs of their audience."
-                    },
-                    {
-                        "title": "Immediate Feedback",
-                        "description": "Instructors can provide immediate feedback in workshops, helping participants correct mistakes and improve their performance in real-time. This feedback loop is valuable for skill refinement."
-                    },
-                    {
-                        "title": "Networking Opportunity",
-                        "description": "Workshops often bring together individuals with similar interests or career goals. This networking aspect can lead to valuable connections, knowledge sharing, and future collaborations."
-                    },
-                    {
-                        "title": "Time Efficiency",
-                        "description": "Workshops are typically shorter in duration than full courses or programs, making them a time-efficient way to acquire new knowledge or skills."
-                    },
-                    {
-                        "title": "Engagement and Motivation",
-                        "description": "The interactive and dynamic nature of workshops can boost participants' motivation and enthusiasm for learning, making it a more enjoyable experience."
-                    },
-                    {
-                        "title": "Practical Application",
-                        "description": "Workshops bridge the gap between theory and practice. Participants can immediately apply what they've learned in their work or academic pursuits."
-                    },
-                    {
-                        "title": "Professional Development",
-                        "description": "Workshops are often used for professional development and continuing education. They allow individuals to stay current with industry trends and advancements."
-                    },
-                    {
-                        "title": "Problem Solving",
-                        "description": "Many workshops focus on problem-solving and critical thinking skills. Participants learn how to analyze situations, identify solutions, and make informed decisions."
-                    },
-                    {
-                        "title": "Diverse Learning Styles",
-                        "description": "Workshops can accommodate different learning styles, catering to auditory, visual, and kinesthetic learners through a variety of teaching methods."
-                    },
-                    {
-                        "title": "Assessment and Evaluation",
-                        "description": "Educators can assess participants' progress and understanding during workshops, adapting the content as needed to ensure effective learning outcomes."
-                    },
-                    {
-                        "title": "Cost-Effective",
-                        "description": "Workshops are often cost-effective compared to longer-term educational programs, making them accessible to a broader audience."
-                    },
-                    {
-                        "title": "Flexibility",
-                        "description": "Workshops can be conducted in various formats, including in-person, online, or hybrid, providing flexibility for learners with different needs and preferences."
-                    }
-                ],
-                "summary": "In summary, workshops are a valuable tool for educational and training purposes because they offer active, engaging, and practical learning experiences that help individuals acquire new skills, enhance existing knowledge, and achieve specific learning objectives."
-            },
-            "registration_fee": "free workshop"
+            "details_description": "Workshop is a brief, interactive session where participants engage in hands-on learning and skill development around a specific topic or subject. It plays a vital role in education by offering hands-on, interactive learning experiences that complement traditional classroom instruction. They provide students with the opportunity to apply theoretical knowledge to real-world situations, fostering practical skills and problem-solving abilities. Workshops also encourage active participation, collaboration, and critical thinking, promoting deeper understanding and retention of subject matter. Additionally, they often expose students to diverse perspectives and practical challenges, preparing them for the complexities of their future careers. Ultimately, workshops bridge the gap between theory and practice, enhancing the overall educational experience and equipping students with the skills and confidence needed for success in their chosen fields.",
+            "registration_fee": "$0 - $150"
         },
         {
             "id": 2,
             "img": "https://i.ibb.co/Vw52NGn/bootcamp.jpg",
             "title": "Digital Marketing Bootcamp",
             "type": "Bootcamp",
-            "details_description": {
-                "intro": "Bootcamps have gained significant popularity in the educational and training landscape due to their unique characteristics and benefits. Here are some of the key reasons why bootcamps are important in educational and training purposes:",
-                "body": [
-                    {
-                        "title": "Intensive Learning",
-                        "description": "Bootcamps are designed to provide a concentrated and immersive learning experience. They typically cover a substantial amount of material in a short period, allowing participants to acquire new skills quickly."
-                    },
-                    {
-                        "title": "Skill-Based Training",
-                        "description": "Bootcamps are often focused on specific skills or industries, such as coding, data science, digital marketing, or cybersecurity. Participants can gain practical, job-relevant skills in a short timeframe."
-                    },
-                    {
-                        "title": "Career Acceleration",
-                        "description": "Bootcamps are particularly beneficial for individuals looking to transition into new careers or upskill within their current profession. They offer a fast track to gaining the skills required for in-demand jobs."
-                    },
-                    {
-                        "title": "Hands-On Experience",
-                        "description": "Many bootcamps emphasize hands-on learning through projects, labs, and real-world simulations. This approach ensures that participants can apply what they learn in practical scenarios."
-                    },
-                    {
-                        "title": "Expert Instruction",
-                        "description": "Bootcamps are typically taught by industry professionals or experts in the field. Participants benefit from the knowledge and insights of experienced instructors."
-                    },
-                    {
-                        "title": "Structured Curriculum",
-                        "description": "Bootcamps provide a structured curriculum, which is essential for learners who prefer a clear learning path and defined objectives."
-                    },
-                    {
-                        "title": "Small Class Sizes",
-                        "description": "Bootcamp class sizes are often limited to ensure personalized attention and an interactive learning environment, promoting active engagement and understanding."
-                    },
-                    {
-                        "title": "Job Placement Support",
-                        "description": "Many bootcamps offer job placement assistance, including resume building, interview preparation, and access to employer networks. This can significantly improve participants' job prospects."
-                    },
-                    {
-                        "title": "Networking Opportunities",
-                        "description": "Bootcamps bring together individuals with similar career goals and interests. Participants can network with peers, instructors, and industry professionals, expanding their professional connections."
-                    },
-                    {
-                        "title": "Flexible Learning Formats",
-                        "description": "Bootcamps are offered in various formats, including in-person, online, and hybrid options. This flexibility accommodates different learning preferences and geographic locations."
-                    },
-                    {
-                        "title": "Industry-Relevant Curriculum",
-                        "description": "Bootcamps often collaborate with industry partners to ensure that the curriculum reflects current trends, tools, and technologies. This makes graduates more marketable to employers."
-                    },
-                    {
-                        "title": "Short Duration",
-                        "description": "Bootcamps typically have a shorter duration compared to traditional educational programs, making them accessible to individuals who want to quickly gain specific skills or certifications."
-                    },
-                    {
-                        "title": "Portfolio Building",
-                        "description": "Participants in bootcamps often build portfolios of projects that showcase their skills to potential employers. This practical experience is valuable when seeking employment."
-                    },
-                    {
-                        "title": "Cost-Effective",
-                        "description": "While bootcamps may have a tuition fee, they are generally more affordable and time-efficient than pursuing a full-length degree program."
-                    },
-                    {
-                        "title": "Continuous Learning",
-                        "description": "Bootcamps encourage a culture of continuous learning and skill development, which is essential in fast-paced industries where technology and knowledge evolve rapidly."
-                    }
-                ],
-                "summary": "In summary, bootcamps offer a focused, practical, and accelerated approach to learning and skill development. They are particularly well-suited for individuals seeking rapid career advancement, industry-specific expertise, or a way to bridge the gap between their current skills and emerging job market demands."
-            },
-            "registration_fee": "$150 - $250 per bootcamp"
+            "details_description": "Bootcamp is a short, intensive training program focused on practical skills and designed to prepare students for specific careers or industries, often in fields like technology and coding. In education it serve as an essential component for addressing the rapidly evolving demands of the job market. In a world where new technologies and industries emerge constantly, traditional educational models often struggle to keep pace. Bootcamps offer a nimble and highly focused approach, equipping learners with practical, job-specific skills in a short time-frame. They cater to individuals seeking career transitions, offering an alternative to lengthy degree programs. Additionally, bootcamps often collaborate with industry partners, ensuring that the curriculum aligns with current industry needs, thus increasing graduates' employability. In summary, bootcamps bridge the skills gap, accelerate career growth, and provide an agile and relevant educational pathway to meet the demands of today's workforce.",
+            "registration_fee": "$100 - $250"
         },
         {
             "id": 3,
             "img": "https://i.ibb.co/5WjbdfG/seminar.jpg",
             "title": "Leadership Training Seminar",
             "type": "Seminar",
-            "details_description": {
-                "intro": "Seminars play a significant role in educational and training contexts and offer several benefits for both participants and organizers. Here are some key reasons why seminars are essential in educational and training programs:",
-                "body": [
-                    {
-                        "title": "Knowledge Sharing",
-                        "description": "Seminars provide a platform for experts, professionals, and educators to share their knowledge and expertise on specific subjects. Participants can gain valuable insights and information from these experts."
-                    },
-                    {
-                        "title": "Focused Learning",
-                        "description": "Seminars often focus on a particular topic or theme, allowing participants to deep-dive into a specific subject area. This focused learning can lead to a deeper understanding of the topic."
-                    },
-                    {
-                        "title": "Networking",
-                        "description": "Seminars bring together individuals with similar interests and expertise. Participants can network, exchange ideas, and establish professional connections, which can be valuable for future collaborations and opportunities."
-                    },
-                    {
-                        "title": "Professional Development",
-                        "description": "Seminars offer opportunities for professionals to enhance their skills, stay up-to-date with industry trends, and earn continuing education credits. This contributes to their ongoing professional development."
-                    },
-                    {
-                        "title": "Interactive Discussions",
-                        "description": "Many seminars include interactive discussions, Q&A sessions, and panel discussions. These formats encourage active participation and engagement among participants, promoting a deeper understanding of the material."
-                    },
-                    {
-                        "title": "Experiential Learning",
-                        "description": "Some seminars incorporate hands-on activities, case studies, or practical exercises, allowing participants to apply what they've learned in a real-world context."
-                    },
-                    {
-                        "title": "Current Information",
-                        "description": "Seminars are often conducted by industry experts or thought leaders who can provide the latest information, research findings, and best practices in their field."
-                    },
-                    {
-                        "title": "Skill Enhancement",
-                        "description": "Seminars can focus on soft skills, such as communication, leadership, and problem-solving, in addition to technical or subject-specific skills. This helps participants develop a well-rounded skill set."
-                    },
-                    {
-                        "title": "Convenience",
-                        "description": "Seminars are often shorter in duration compared to longer courses or programs, making them a convenient option for busy professionals or individuals with limited time."
-                    },
-                    {
-                        "title": "Cost-Effective",
-                        "description": "Seminars are typically more cost-effective than enrolling in a full-length course or program. This affordability makes them accessible to a broader audience."
-                    },
-                    {
-                        "title": "Personal Growth",
-                        "description": "Seminars can also address personal development topics, such as time management, stress reduction, and goal setting, contributing to personal growth and well-being."
-                    },
-                    {
-                        "title": "Certification and Recognition",
-                        "description": "Some seminars offer certificates or badges upon completion, which can enhance participants' resumes and professional profiles."
-                    },
-                    {
-                        "title": "Problem Solving",
-                        "description": "Seminars may involve discussions of real-world challenges and problem-solving strategies, allowing participants to gain practical insights and solutions."
-                    },
-                    {
-                        "title": "Motivation and Inspiration",
-                        "description": "Attending a seminar with like-minded individuals and inspirational speakers can boost motivation and enthusiasm for personal and professional growth."
-                    },
-                    {
-                        "title": "Accessibility",
-                        "description": "Seminars can be conducted in various formats, including in-person, online, or as webinars, making them accessible to a wide range of participants regardless of location."
-                    }
-                ],
-                "summary": "In summary, seminars serve as a valuable component of educational and training programs by offering opportunities for knowledge sharing, skill development, networking, and professional growth. They provide a focused and interactive learning experience that can benefit individuals across various industries and career stages."
-            },
-            "registration_fee": "$200 - $500 per seminar"
+            "details_description": "Seminars refers to a small-group discussion or presentation where participants exchange ideas, engage in academic discussions, or explore a particular topic in depth. It holds a great importance in education as they foster critical thinking, active participation, and in-depth exploration of subjects. These small-group discussions encourage students to engage deeply with the material, ask questions, and challenge their own understanding, promoting a more profound grasp of the content. Seminars also cultivate essential communication and presentation skills, as students often need to articulate and defend their ideas in front of peers and instructors. Beyond academic benefits, seminars encourage collaboration and diverse perspectives, enriching the learning experience. They help students develop the ability to analyze, synthesize, and apply knowledge, essential skills that extend far beyond the classroom and into future academic and professional pursuits. In this way, seminars contribute significantly to the holistic growth and intellectual development of students.",
+            "registration_fee": "$200 - $500"
         },
         {
             "id": 4,
             "img": "https://i.ibb.co/Wc3Vjmc/webinar.jpg",
             "title": "Data Science Webinar",
             "type": "Webinar",
-            "details_description": {
-                "intro": "Webinars are a valuable tool in educational and training purposes, offering several benefits for both learners and educators. Here are some key reasons why webinars are essential in educational and training contexts:",
-                "body": [
-                    {
-                        "title": "Accessibility",
-                        "description": "Webinars can be accessed from anywhere with an internet connection, making them highly accessible to a global audience. This accessibility eliminates geographical barriers and allows individuals to participate remotely."
-                    },
-                    {
-                        "title": "Convenience",
-                        "description": "Participants can join webinars from the comfort of their homes or workplaces, reducing the need for travel and time away from other commitments. This convenience is especially beneficial for busy professionals and learners with demanding schedules."
-                    },
-                    {
-                        "title": "Cost-Effective",
-                        "description": "Hosting and attending webinars are often more cost-effective than organizing in-person events. This cost efficiency extends to travel expenses, venue rentals, and printed materials."
-                    },
-                    {
-                        "title": "Interactivity",
-                        "description": "Webinars can incorporate various interactive elements, such as polls, surveys, Q&A sessions, and live chats. These features engage participants and foster two-way communication."
-                    },
-                    {
-                        "title": "Expertise Sharing",
-                        "description": "Webinars provide a platform for subject matter experts, educators, and industry leaders to share their knowledge and insights with a broad audience. This democratizes access to expertise."
-                    },
-                    {
-                        "title": "Flexible Scheduling",
-                        "description": "Webinars can be scheduled at different times to accommodate participants from different time zones. Recordings are often available for those unable to attend the live session."
-                    },
-                    {
-                        "title": "Real-Time Updates",
-                        "description": "Webinars enable the dissemination of real-time information and updates, particularly important in rapidly evolving fields or during emergencies."
-                    },
-                    {
-                        "title": "Multi-Media Content",
-                        "description": "Webinars can incorporate multimedia elements, including slides, videos, animations, and live demonstrations, enhancing the learning experience."
-                    },
-                    {
-                        "title": "Scalability",
-                        "description": "Webinars can accommodate a large number of participants simultaneously, making them suitable for both small group discussions and massive online events."
-                    },
-                    {
-                        "title": "Recordings",
-                        "description": "Most webinars are recorded, allowing participants to revisit the content at their convenience. This is beneficial for review, reinforcement, or for those who missed the live session."
-                    },
-                    {
-                        "title": "Feedback and Evaluation",
-                        "description": "Educators can collect feedback and evaluate participant engagement during webinars, enabling continuous improvement of content and delivery."
-                    },
-                    {
-                        "title": "Data Analytics",
-                        "description": "Webinar platforms often provide analytics and reporting tools that allow organizers to track participant behavior, assess performance, and make data-driven decisions for future events."
-                    },
-                    {
-                        "title": "Professional Development",
-                        "description": "Webinars offer a convenient way for professionals to engage in continuous learning and earn continuing education credits or certifications."
-                    },
-                    {
-                        "title": "Global Reach",
-                        "description": "Webinars facilitate international collaboration and knowledge sharing. They enable institutions and organizations to reach a diverse and global audience."
-                    },
-                    {
-                        "title": "Customization",
-                        "description": "Webinars can be tailored to specific learning objectives, audience needs, and instructional strategies, ensuring that content is relevant and engaging."
-                    }
-                ],
-                "summary": "In summary, webinars are a versatile and effective tool for educational and training purposes, offering accessibility, convenience, interactivity, and the ability to connect learners with experts and content from around the world. They complement traditional learning methods and play a crucial role in lifelong learning and professional development."
-            },
-            "registration_fee": "$100 - $300 per webinar"
+            "details_description": "Webinars are of paramount importance in education as they facilitate accessible, flexible, and interactive learning experiences. They break down geographical barriers, granting students and educators worldwide access to a wealth of knowledge. Webinars offer the flexibility to accommodate diverse schedules, allowing learners to engage with educational content at their convenience. Their cost-effectiveness makes quality education more attainable, while the scalability enables widespread dissemination of information. Interactivity, through features like live chat and Q&A, fosters engagement, critical thinking, and collaborative learning. Moreover, the ability to record and archive webinars ensures that valuable content remains accessible for future reference. Webinars serve as a powerful tool for sharing expertise, enabling experts from various fields to educate a global audience, enriching educational opportunities and promoting lifelong learning.",
+            "registration_fee": "$100 - $300"
         },
         {
             "id": 5,
@@ -367,7 +106,7 @@
                 ],
                 "summary": "In summary, training programs play a vital role in educational and training contexts by offering a structured and effective way for individuals to develop skills, acquire knowledge, advance their careers, and adapt to changing environments. They are a valuable tool for both personal and professional growth."
             },
-            "registration_fee": "$450 - $1000 per course"
+            "registration_fee": "$500 - $1000"
         },
         {
             "id": 6,
@@ -440,7 +179,7 @@
                 ],
                 "summary": "In summary, job placement services are a vital link between education or training programs and the job market. They bridge the gap between learning and employment, increasing the chances of program participants finding suitable and fulfilling careers. These services play a pivotal role in the success and impact of educational and training programs."
             },
-            "registration_fee": "Free (Reward upon Task)"
+            "registration_fee": "$0 - $250"
         }
     ]
 }

@@ -13,14 +13,14 @@ body {
 }
 
 .my-btn {
-    @apply px-4 py-1.5 flex items-center gap-x-2 border border-gray-600 text-gray-700;
+    @apply px-4 py-1.5 flex items-center gap-x-2 border border-gray-600 text-gray-700 from-cyan-50 to-cyan-100 rounded;
 }
 
-.my-btn span {
+.my-btn span>svg {
     @apply transition-transform;
 }
 
-.my-btn:hover span {
+.my-btn:hover span>svg {
     transform: rotate(-45deg);
 }
 
@@ -28,7 +28,7 @@ body {
     visibility: hidden;
     bottom: -80px;
     opacity: 0;
-    transition: visibility 0s, bottom 0.25s, opacity 0.25s linear;
+    transition: visibility 0s, bottom 0.3s, opacity 0.3s linear;
 }
 
 .card:hover .absolute.bg-gradient-to-r {

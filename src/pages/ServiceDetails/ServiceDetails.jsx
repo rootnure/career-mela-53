@@ -1,45 +1,36 @@
 import { Helmet } from "react-helmet-async";
 import { useLoaderData } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa";
 
 
 const ServiceDetails = () => {
 
     const service = useLoaderData();
 
-    const { img, title, type, details_description, registration_fee } = service;
-
-    const { intro, body, summary } = details_description;
-
-    const bgImg = {
-        backgroundImage: `url(${img})`
-    };
+    const { img, type, details_description, registration_fee } = service;
 
     return (
         <section className="container mx-auto">
             <Helmet>
-                <title>{title} Details | Career Mela</title>
+                <title>{type} Details | Career Mela</title>
             </Helmet>
-            <div className="hero min-h-screen" style={bgImg}>
-                <div className="hero-overlay bg-blue-50 bg-opacity-90 rounded-lg"></div>
-                <div className="hero-content text-center text-neutral-content">
-                    <div className="max-w-fit py-6 text-black">
-                        <h1 className="pb-4 text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-500">{title}</h1>
-                        <p className="italic mb-4 text-center">{registration_fee}</p>
-                        <div className="mb-5 text-justify space-y-4">
-                            <p className="text-xl text-center">Why and What is <span className="font-bold">{type}</span></p>
-                            <p>{intro}</p>
-                            <ol className="list-decimal list-inside">
-                                {
-                                    body.map((point, idx) => <li className={`mb-2 ${idx < 5 ? "text-black" : idx < 10 ? "text-gray-700" : "text-gray-600"}`} key={idx}>
-                                        <span className="font-bold underline">{point.title}:</span>
-                                        <span> {point.description}</span>
-                                    </li>)
-                                }
-                            </ol>
-                            <p className="italic">{summary}</p>
+            <div className="grid grid-cols-4 gap-6 my-12">
+                <div className="col-span-3">
+                    <div className="card card-compact bg-base-100 border rounded-md">
+                        <figure className="h-[550px] group"><img src={img} alt={type} className="group-hover:scale-105 transition-all duration-300" /></figure>
+                        <div className="card-body">
+                            <div className="flex justify-between items-center">
+                                <h2 className="card-title text-4xl font-bold bg-gradient-to-l from-cyan-500 to-blue-500 text-transparent bg-clip-text">{type}</h2>
+                                <h4 className="font-semibold text-xl text-red-500"><span className="text-sm font-normal text-blue-600">Registration Fee:</span> {registration_fee}<span className="font-normal text-xs text-black">/event</span></h4>
+                            </div>
+                            <p className="leading-6 text-gray-600 text-justify">{details_description}</p>
+                            <div className="card-actions justify-center my-4">
+                                <button className="my-btn hover:scale-105 transition-all duration-300"><span className="bg-gradient-to-l from-cyan-600 to-blue-500 text-transparent bg-clip-text font-semibold">Available {type}s</span> <span className="text-blue-500"><FaArrowRight></FaArrowRight></span></button>
+                            </div>
                         </div>
                     </div>
                 </div>
+                {/* aside */}
             </div>
         </section>
     );

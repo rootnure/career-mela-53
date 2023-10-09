@@ -16,7 +16,7 @@ const Services = () => {
 
     return (
         <div className="col-span-3">
-            <h3 className="text-4xl text-center font-bold py-4 mb-12">Our Services</h3>
+            <h3 className="text-4xl text-center font-bold py-4 mb-8">Our Services</h3>
             <div className="grid grid-cols-1 gap-12">
                 {
                     services.map((service, idx) => <Service
