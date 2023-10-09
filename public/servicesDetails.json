@@ -36,76 +36,7 @@
             "img": "https://i.ibb.co/w4XfmtF/training.jpg",
             "title": "Machine Learning Training Program",
             "type": "Training Program",
-            "details_description": {
-                "intro": "Training programs are essential in educational and training contexts for a variety of reasons. They offer structured and organized approaches to skill development, knowledge acquisition, and personal growth. Here are some key reasons why training programs are important:",
-                "body": [
-                    {
-                        "title": "Skill Development",
-                        "description": "Training programs are designed to help individuals acquire specific skills, whether they are technical, soft, or specialized in nature. These skills are often directly applicable to their career or personal goals."
-                    },
-                    {
-                        "title": "Structured Learning",
-                        "description": "Training programs provide a structured and organized curriculum, ensuring that participants progress systematically from foundational concepts to more advanced topics."
-                    },
-                    {
-                        "title": "Expert Guidance",
-                        "description": "Many training programs are led by experienced instructors or subject matter experts who can provide valuable insights, guidance, and feedback to participants."
-                    },
-                    {
-                        "title": "Hands-On Practice",
-                        "description": "Training programs often include hands-on exercises, practical assignments, and real-world projects that allow participants to apply what they have learned in a practical context."
-                    },
-                    {
-                        "title": "Certifications",
-                        "description": "Some training programs offer certifications upon completion, which can enhance participants' resumes and career prospects."
-                    },
-                    {
-                        "title": "Specialization",
-                        "description": "Training programs allow individuals to specialize in a particular field or area of expertise, making them more competitive and knowledgeable in their chosen domain."
-                    },
-                    {
-                        "title": "Career Advancement",
-                        "description": "Training programs can provide individuals with the skills and knowledge needed to advance in their careers or pursue new career opportunities."
-                    },
-                    {
-                        "title": "Continuing Education",
-                        "description": "Many professionals use training programs as a means of continuous learning, ensuring that they stay current with industry trends and advancements."
-                    },
-                    {
-                        "title": "Adaptation to Change",
-                        "description": "In rapidly evolving fields, training programs help individuals adapt to technological, regulatory, or industry changes by providing updated knowledge and skills."
-                    },
-                    {
-                        "title": "Customization",
-                        "description": "Training programs can be customized to meet the specific needs of participants or organizations, addressing skills gaps or focusing on areas of interest."
-                    },
-                    {
-                        "title": "Employee Development",
-                        "description": "Employers often use training programs to develop and upskill their workforce, improving overall productivity and job satisfaction."
-                    },
-                    {
-                        "title": "Problem Solving",
-                        "description": "Training programs may include scenarios, case studies, or simulations that challenge participants to solve real-world problems, enhancing critical thinking and decision-making skills."
-                    },
-                    {
-                        "title": "Networking",
-                        "description": "Participants in training programs have the opportunity to network with peers, mentors, and industry professionals, expanding their professional connections."
-                    },
-                    {
-                        "title": "Performance Improvement",
-                        "description": "For organizations, training programs can lead to improved employee performance, which, in turn, can have a positive impact on business outcomes."
-                    },
-                    {
-                        "title": "Global Competitiveness",
-                        "description": "In a globalized world, training programs can help individuals and organizations remain competitive on a global scale by providing relevant skills and knowledge."
-                    },
-                    {
-                        "title": "Personal Growth",
-                        "description": "Training programs can contribute to personal growth and self-improvement by offering opportunities for individuals to explore new interests and passions."
-                    }
-                ],
-                "summary": "In summary, training programs play a vital role in educational and training contexts by offering a structured and effective way for individuals to develop skills, acquire knowledge, advance their careers, and adapt to changing environments. They are a valuable tool for both personal and professional growth."
-            },
+            "details_description": "Training programs are indispensable in education as they serve to bridge the gap between theoretical knowledge and practical skills, a vital component of holistic learning. These programs equip students with hands-on, real-world expertise, preparing them for the demands of the job market. They instill problem-solving abilities, critical thinking, and the ability to apply knowledge in context, cultivating a deeper understanding of subject matter. Training programs also foster a spirit of innovation and adaptability, essential in today's ever-evolving industries. Furthermore, they often incorporate industry-specific insights and experiences, making graduates more job-ready and enhancing their employability. In an era where employability and practical skills are paramount, training programs complement traditional education, ensuring that students are not only well-informed but also well-prepared to succeed in their chosen careers.",
             "registration_fee": "$500 - $1000"
         },
         {
@@ -113,72 +44,7 @@
             "img": "https://i.ibb.co/sWPQY6F/job-placement.jpg",
             "title": "Job Placement Workshop",
             "type": "Job Placement",
-            "details_description": {
-                "intro": "Job placement services are an essential component of educational and training programs, especially in contexts where the primary goal is to prepare individuals for employment. Here are several reasons why job placement services are crucial in educational and training programs:",
-                "body": [
-                    {
-                        "title": "Transition to Employment",
-                        "description": "Educational and training programs aim to equip individuals with the skills and knowledge needed to secure employment. Job placement services facilitate this transition by helping participants find suitable job opportunities."
-                    },
-                    {
-                        "title": "Applied Learning",
-                        "description": "Many educational and training programs focus on practical skills and real-world knowledge. Job placement services allow participants to apply what they've learned in a professional setting."
-                    },
-                    {
-                        "title": "Career Alignment",
-                        "description": "Job placement services can help participants align their newly acquired skills with career opportunities that match their interests and goals. This ensures a better fit between the individual and the job."
-                    },
-                    {
-                        "title": "Support for Job Seekers",
-                        "description": "Job placement services provide guidance and support for job seekers, including resume writing, interview preparation, and job search strategies. This support increases the likelihood of securing employment."
-                    },
-                    {
-                        "title": "Access to Networks",
-                        "description": "These services often have connections with employers and industry partners, giving participants access to job openings that may not be publicly advertised."
-                    },
-                    {
-                        "title": "Local Labor Market Knowledge",
-                        "description": "Job placement services are often well-informed about the local job market and can provide insights into industries with high demand for specific skills."
-                    },
-                    {
-                        "title": "Career Counseling",
-                        "description": "Career counselors within job placement services can help participants identify their strengths, interests, and long-term career goals, guiding them toward suitable career paths."
-                    },
-                    {
-                        "title": "Job Matching",
-                        "description": "Job placement services can match participants with job opportunities that align with their qualifications and preferences, ensuring a good fit between the employee and the employer."
-                    },
-                    {
-                        "title": "Reducing Unemployment",
-                        "description": "By helping participants find employment, job placement services contribute to reducing unemployment rates in the community, which benefits the overall economy."
-                    },
-                    {
-                        "title": "Employer Engagement",
-                        "description": "Job placement services often engage with employers to understand their hiring needs. This knowledge helps them prepare participants to meet those needs effectively."
-                    },
-                    {
-                        "title": "Skill Validation",
-                        "description": "Employers often trust educational and training programs that include job placement services because they see them as validation of the skills and qualifications of program graduates."
-                    },
-                    {
-                        "title": "Long-Term Success",
-                        "description": "Job placement services can offer ongoing support, even after participants secure employment, to ensure their long-term success in their careers."
-                    },
-                    {
-                        "title": "Diverse Job Opportunities",
-                        "description": "These services can provide access to a wide range of job opportunities, from entry-level positions to more advanced roles, catering to the needs of various participants."
-                    },
-                    {
-                        "title": "Boosting Confidence",
-                        "description": "Knowing that job placement services are available can boost participants' confidence in their ability to find meaningful employment, motivating them to complete their training or education."
-                    },
-                    {
-                        "title": "Feedback Loop",
-                        "description": "Job placement services can gather feedback from employers about the performance of program graduates, enabling program improvements and adjustments."
-                    }
-                ],
-                "summary": "In summary, job placement services are a vital link between education or training programs and the job market. They bridge the gap between learning and employment, increasing the chances of program participants finding suitable and fulfilling careers. These services play a pivotal role in the success and impact of educational and training programs."
-            },
+            "details_description": "Job placement services are a crucial component of education as they play a pivotal role in helping students transition from academia to the workforce seamlessly. In today's competitive job market, it's not enough for educational institutions to provide theoretical knowledge alone; they must also equip students with the practical tools and resources needed to secure gainful employment. Job placement services offer guidance on crafting effective resumes, honing interview skills, and navigating the job search process, empowering graduates to make a successful entry into their chosen careers. These services also establish valuable connections with potential employers, opening doors for internships, co-op programs, and job opportunities. By ensuring that graduates find suitable employment, job placement services not only enhance students' post-graduation prospects but also contribute to the overall reputation and success of educational institutions, demonstrating their commitment to the holistic development and success of their students.",
             "registration_fee": "$0 - $250"
         }
     ]
