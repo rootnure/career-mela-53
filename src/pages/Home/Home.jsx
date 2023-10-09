@@ -2,8 +2,8 @@ import { Helmet } from "react-helmet-async";
 import Header from "../../components/Header/Header";
 import Services from "../../components/Services/Services";
 import RightSidebar from "../../components/RightSidebar/RightSidebar";
-import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from "react-toastify";
 
 
 const Home = () => {
@@ -21,7 +21,7 @@ const Home = () => {
             </div>
             <ToastContainer
                 position="top-right"
-                autoClose={5000}
+                autoClose={3500}
                 hideProgressBar={false}
                 newestOnTop={false}
                 closeOnClick
