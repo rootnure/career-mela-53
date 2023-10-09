@@ -27,12 +27,30 @@ const router = createBrowserRouter([
                 }
             },
             {
-                path: "/profile",
-                element: <Register />,
+                path: "/upcomingEvents",
+                element: <div>All Events</div>,
             },
             {
-                path: "/appliedJobs",
-                element: <Register />,
+                path: "/allEvents/:category",
+                element: <div>Category wise All Events</div>,
+                loader: async ({ params }) => {
+                    const res = await fetch("/allEvents.json");
+                    const allEvents = await res.json();
+                    return allEvents.filter(event => event.category.toLowerCase() === params.category.toLowerCase());
+                },
+            },
+            {
+                path: "/appliedEvents",
+                element: <div>Applied Events</div>,
+                loader: async () => {
+                    const res = await fetch("/allEvents.json");
+                    const allEvents = await res.json();
+                    return allEvents;
+                }
+            },
+            {
+                path: "/profile",
+                element: <div>Profile</div>,
             },
             {
                 path: "/register",

@@ -16,12 +16,13 @@ const Services = () => {
 
     return (
         <div className="col-span-3">
-            <h3 className="text-4xl text-center font-bold py-4">Our Services</h3>
-            <div className="grid grid-cols-3 gap-4">
+            <h3 className="text-4xl text-center font-bold py-4 mb-12">Our Services</h3>
+            <div className="grid grid-cols-1 gap-12">
                 {
-                    services.map(service => <Service
+                    services.map((service, idx) => <Service
                         key={service.id}
-                        service={service}></Service>)
+                        service={service}
+                        isEven={idx % 2 ? true : false}></Service>)
                 }
             </div>
         </div>

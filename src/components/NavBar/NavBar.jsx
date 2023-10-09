@@ -6,9 +6,11 @@ const NavBar = () => {
 
     const links = <>
         <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/appliedJobs">Success Stories</NavLink></li>
-        <li><NavLink to="/appliedJobs">Student Reviews</NavLink></li>
-        <li><NavLink to="/appliedJobs">About Us</NavLink></li>
+        <li><NavLink to="/upcomingEvents">Upcoming Events</NavLink></li>
+        <>
+            <li><NavLink to="/appliedEvents">Applied Events</NavLink></li>
+            <li><NavLink to="/profile">Profile</NavLink></li>
+        </>
     </>
 
     return (

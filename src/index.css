@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-handlee {
+    font-family: 'Handlee', cursive;
+}
 
 .my-btn {
     @apply px-4 py-1.5 flex items-center gap-x-2 border border-gray-600 text-gray-700;
@@ -16,13 +26,13 @@
 
 .card .absolute.bg-gradient-to-r {
     visibility: hidden;
-    bottom: -60px;
+    bottom: -80px;
     opacity: 0;
     transition: visibility 0s, bottom 0.25s, opacity 0.25s linear;
 }
 
 .card:hover .absolute.bg-gradient-to-r {
     visibility: visible;
-    bottom: -20px;
+    bottom: 20px;
     opacity: 1;
 }

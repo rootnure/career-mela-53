@@ -10,8 +10,6 @@ const ServiceDetails = () => {
 
     const { intro, body, summary } = details_description;
 
-    console.log(service, img);
-
     const bgImg = {
         backgroundImage: `url(${img})`
     };
@@ -26,10 +24,7 @@ const ServiceDetails = () => {
                 <div className="hero-content text-center text-neutral-content">
                     <div className="max-w-fit py-6 text-black">
                         <h1 className="pb-4 text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-500">{title}</h1>
-                        <div className="flex flex-col items-center relative">
-                            <p className="text-2xl font-bold">{type}</p>
-                            <p className="italic mb-4 z-10">{registration_fee}</p>
-                        </div>
+                        <p className="italic mb-4 text-center">{registration_fee}</p>
                         <div className="mb-5 text-justify space-y-4">
                             <p className="text-xl text-center">Why and What is <span className="font-bold">{type}</span></p>
                             <p>{intro}</p>
