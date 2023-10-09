@@ -1,10 +1,10 @@
-// import BannerSlider from "../BannerSlider/BannerSlider";
+import BannerSlider from "../BannerSlider/BannerSlider";
 
 
 const Header = () => {
     return (
         <div>
-            {/* <BannerSlider></BannerSlider> */}
+            <BannerSlider></BannerSlider>
         </div>
     );
 };

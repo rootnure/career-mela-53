@@ -19,7 +19,7 @@ const RecentlyApplied = () => {
 
     return (
         <div className="container mx-auto mt-12">
-            <div data-aos="fade-up" className="flex gap-6 my-6">
+            <div className="flex gap-6 my-6">
                 <div className="col-span-3 w-full">
                     <h2 className="text-center text-4xl font-bold pb-6 divider">Recently Applied Events</h2>
                     <h3 className="text-lg italic text-gray-500 text-center">{appliedEvents.length < 1 && "Not applied any events yet"}</h3>

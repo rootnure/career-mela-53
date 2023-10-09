@@ -29,9 +29,8 @@ const User = () => {
                                 <img src={user.photoURL} alt={user.email || "User Profile Picture"} className="rounded-full w-full" />
                             </div>
                         </label>
-                        <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content rounded-box w-52 bg-cyan-50">
-                            <li><button className="font-bold" title="Go to profile">{user.displayName || "user"}</button></li>
-                            <li><button onClick={handleLogOut}>Logout</button></li>
+                        <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content rounded-box w-52 bg-cyan-100">
+                            <li><button className="font-bold" onClick={handleLogOut}>Logout</button></li>
                         </ul>
                     </div>
                     :

@@ -15,7 +15,6 @@ const NavBar = () => {
         {
             user && <>
                 <li><NavLink to="/appliedEvents">Applied Events</NavLink></li>
-                <li><NavLink to="/profile">Profile</NavLink></li>
             </>
         }
     </>
@@ -45,7 +44,7 @@ const NavBar = () => {
                     </div>
                 </div>
             </div>
-            <div className="h-20"></div>
+            <div className="h-24"></div>
         </>
     );
 };

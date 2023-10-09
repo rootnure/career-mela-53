@@ -12,6 +12,13 @@ body {
     font-family: 'Handlee', cursive;
 }
 
+#banner {
+    background-image: url("https://i.ibb.co/wpwrF72/banner.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 .my-btn {
     @apply px-4 py-1.5 flex items-center gap-x-2 border border-gray-600 text-gray-700 from-cyan-50 to-cyan-100 rounded cursor-pointer;
 }
