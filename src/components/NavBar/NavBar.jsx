@@ -15,7 +15,6 @@ const NavBar = () => {
         {
             user && <>
                 <li><NavLink to="/appliedEvents">Applied Events</NavLink></li>
-                <li><NavLink to="/loginRegister">LogIn</NavLink></li>
             </>
         }
     </>
