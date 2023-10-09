@@ -12,8 +12,6 @@ const Services = () => {
             .then(data => setServices(data.services))
     }, []);
 
-    console.log(services);
-
     return (
         <div className="col-span-3">
             <h3 className="text-4xl text-center font-bold py-4 mb-8">Our Services</h3>

@@ -1,7 +1,8 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Logo from "../Logo/Logo";
 import { useContext } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
+import User from "../User/User";
 
 
 const NavBar = () => {
@@ -40,7 +41,7 @@ const NavBar = () => {
                         </ul>
                     </div>
                     <div className="navbar-end">
-                        <Link to="/login"><button className="btn">Login</button></Link>
+                        <User></User>
                     </div>
                 </div>
             </div>

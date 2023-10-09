@@ -7,8 +7,6 @@ const Service = ({ service, isEven }) => {
 
     const { id, img, type, short_description, cost } = service;
 
-    console.log(isEven, type);
-
     return (
         <>
             <div className={`flex ${isEven && "justify-end"}`}>

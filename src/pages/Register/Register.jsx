@@ -1,22 +1,52 @@
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { BsFillEyeFill, BsFillEyeSlashFill } from "react-icons/bs";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { AuthContext } from "../../provider/AuthProvider";
 
 
 const Register = () => {
 
+    const { createUser, updateInfo } = useContext(AuthContext);
+
+    const navigate = useNavigate();
+
     const [isPasswordVisible, setIsPasswordVisible] = useState(false);
     const [errorMsg, setErrorMsg] = useState("");
 
+    const handleCreateUser = e => {
+        e.preventDefault();
+        const name = e.target.name.value;
+        const photoURL = e.target.photoURL.value;
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+        e.target.reset();
+
+        createUser(email, password)
+            .then(() => {
+                updateInfo(name, photoURL)
+                    .then(() => {
+                        navigate('/');
+                    })
+                    .catch(err => console.error(err))
+            })
+            .catch(err => console.error(err))
+    }
+
     const handleValidPassword = (e) => {
         setErrorMsg("");
+
         const password = e.target.value;
-        console.log(password);
+
+        const registerBtn = document.getElementById("registerBtn");
+
+        registerBtn.setAttribute("disabled", true);
+
         if (password.length === 0) setErrorMsg("");
         else if (password.length < 6) setErrorMsg("Password must be at lest 6 character long");
         else if (!/[A-Z]/.test(password)) setErrorMsg("Password must contain at lest one UPPERCASE letter");
         else if (!/[!@#$%^&*()_+\-=[\]{};'~`:"\\|,.<>/?]/.test(password)) setErrorMsg("Password must contain at lest one special character");
+        else registerBtn.removeAttribute("disabled");
     }
 
     return (
@@ -31,7 +61,7 @@ const Register = () => {
                         <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                        <form className="card-body">
+                        <form onSubmit={handleCreateUser} className="card-body">
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Name</span>
@@ -63,7 +93,7 @@ const Register = () => {
                                 </label>
                             </div>
                             <div className="form-control mt-6">
-                                <button type="submit" className="btn btn-primary">Register</button>
+                                <button type="submit" id="registerBtn" className="btn btn-primary" disabled>Register</button>
                             </div>
                             <p className="text-center">Already have an account? <Link to="/login" className="underline">Login</Link></p>
                         </form>
