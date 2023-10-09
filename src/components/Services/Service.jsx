@@ -13,7 +13,7 @@ const Service = ({ service, isEven }) => {
                 <div className='w-9/12'>
                     <div className={`card group card-compact border border-cyan-200 rounded-lg ${!isEven ? "flex-row" : "flex-row-reverse"}`}>
                         <div className="relative">
-                            <figure className='h-60 w-80 relative'>
+                            <figure className='h-60 w-80 relative rounded-lg'>
                                 <img src={img} alt={`${type} Thumbnail`} className='w-full transition-all duration-300 group-hover:scale-110' />
                                 <div className={`absolute h-full w-full bg-[#00000000] transition-all duration-300 group-hover:bg-[#00000025] ${isEven ? "rounded-e-lg" : "rounded-s-lg"}`}></div>
                             </figure>

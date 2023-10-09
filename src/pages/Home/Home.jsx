@@ -26,8 +26,8 @@ const Home = () => {
                 newestOnTop={false}
                 closeOnClick
                 rtl={false}
-                pauseOnFocusLoss
-                draggable
+                pauseOnFocusLoss={false}
+                draggable={false}
                 pauseOnHover
                 theme="colored"
             />

@@ -29,14 +29,14 @@ const SocialLogin = () => {
                             <button
                                 onClick={() => handleSocialLogin(googleLogin)}
                                 title="Use your google account to login"
-                                className='my-btn justify-center w-full hover:bg-blue-500 !border-blue-500 !text-blue-500 hover:!text-white transition-all'>
+                                className='my-btn justify-center w-full hover:bg-blue-700 !border-blue-700 !text-blue-700 hover:!text-white transition-all'>
                                 <AiOutlineGoogle className='text-3xl'></AiOutlineGoogle>
                                 <p className='text-sm'>Login with Google</p>
                             </button>
                             <button
                                 onClick={() => handleSocialLogin(githubLogin)}
                                 title="Use your github account to login"
-                                className='my-btn justify-center w-full hover:bg-gray-700 !border-gray-700 hover:!text-white transition-all'>
+                                className='my-btn justify-center w-full hover:bg-black !border-black !text-black hover:!text-white transition-all'>
                                 <AiFillGithub className='text-3xl'></AiFillGithub>
                                 <p className='text-sm'>Login with Github</p>
                             </button>

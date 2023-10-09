@@ -17,10 +17,13 @@ const LogIn = () => {
 
     const handleLogin = e => {
         e.preventDefault();
+        const loadingText = document.getElementById("loadingText");
+        loadingText.classList.remove('hidden');
         const email = e.target.email.value;
         const password = e.target.password.value;
         signIn(email, password)
             .then(() => {
+                loadingText.classList.add('hidden');
                 toast.success('Successfully logged in');
                 navigate("/");
             })
@@ -32,6 +35,9 @@ const LogIn = () => {
             <Helmet>
                 <title>Login | Job Utsob</title>
             </Helmet>
+            <div id="loadingText" className="fixed top-0 left-0 right-0 w-fit mx-auto z-[500] bg-[#fff384] hidden">
+                <p className="px-2">Loading. Please wait...</p>
+            </div>
             <div className="hero bg-base-200 min-h-[calc(100vh-175px)]">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="text-center lg:text-left">
