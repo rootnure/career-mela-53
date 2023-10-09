@@ -2,9 +2,13 @@ import PropTypes from 'prop-types';
 import { BsFillPersonFill, BsFillPinMapFill, BsCalendarEvent, BsCurrencyDollar } from "react-icons/bs";
 import { storeAppliedEvents } from '../../localstorage';
 import { toast } from 'react-toastify';
+import { useContext } from 'react';
+import { AuthContext } from '../../provider/AuthProvider';
 
 
 const Event = ({ event }) => {
+
+    const { user } = useContext(AuthContext);
 
     const { id, img, title, description, motivation, speaker, event_info } = event;
     const { location, date, time, reg_fee, reg_deadline } = event_info;
@@ -60,7 +64,7 @@ const Event = ({ event }) => {
                             </div>}
                     </div>
                     <div className="card-actions justify-center mt-4">
-                        <button onClick={handleEventApply} className="my-btn">Apply/Register</button>
+                        {user && <button onClick={handleEventApply} className="my-btn">Apply/Register</button>}
                     </div>
                 </div>
             </div>

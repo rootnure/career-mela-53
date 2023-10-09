@@ -34,4 +34,5 @@ const AppliedEvents = () => {
         </div>
     );
 };
+
 export default AppliedEvents;

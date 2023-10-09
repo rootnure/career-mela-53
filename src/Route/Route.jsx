@@ -40,7 +40,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/allEvents/:category",
-                element: <EventsByCategory></EventsByCategory>,
+                element: <PrivateRoute><EventsByCategory /></PrivateRoute>,
                 loader: async ({ params }) => {
                     const res = await fetch("/allEvents.json");
                     const allEvents = await res.json();
