@@ -5,6 +5,7 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import ServiceDetails from "../pages/ServiceDetails/ServiceDetails";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import LoginRegisterPage from "../pages/LogIn/LogInRegisterPage";
+import EventsByCategory from "../pages/EventByCategory/EventsByCategory";
 
 const router = createBrowserRouter([
     {
@@ -32,7 +33,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/allEvents/:category",
-                element: <div>Category wise All Events</div>,
+                element: <EventsByCategory></EventsByCategory>,
                 loader: async ({ params }) => {
                     const res = await fetch("/allEvents.json");
                     const allEvents = await res.json();

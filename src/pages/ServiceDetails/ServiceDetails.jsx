@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 import RightSidebar from "../../components/RightSidebar/RightSidebar";
 
@@ -26,7 +26,13 @@ const ServiceDetails = () => {
                             </div>
                             <p className="leading-6 text-gray-600 text-justify">{details_description}</p>
                             <div className="card-actions justify-center my-4">
-                                <button className="my-btn hover:scale-105 transition-all duration-300"><span className="bg-gradient-to-l from-cyan-600 to-blue-500 text-transparent bg-clip-text font-semibold">Upcoming {type === "Job Placement" ? type + " Event" : type}s</span> <span className="text-blue-500"><FaArrowRight></FaArrowRight></span></button>
+                                <Link to={`/allEvents/${type}`}><button
+                                    className="my-btn hover:scale-105 transition-all duration-300">
+                                    <span
+                                        className="bg-gradient-to-l from-cyan-600 to-blue-500 text-transparent bg-clip-text font-semibold">Upcoming {type === "Job Placement" ? type + " Event" : type}s</span>
+                                    <span className="text-blue-500"><FaArrowRight></FaArrowRight></span>
+                                </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
