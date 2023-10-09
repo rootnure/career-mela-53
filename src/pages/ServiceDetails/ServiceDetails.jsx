@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { useLoaderData } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
+import RightSidebar from "../../components/RightSidebar/RightSidebar";
 
 
 const ServiceDetails = () => {
@@ -30,7 +31,7 @@ const ServiceDetails = () => {
                         </div>
                     </div>
                 </div>
-                {/* aside */}
+                <RightSidebar></RightSidebar>
             </div>
         </section>
     );
