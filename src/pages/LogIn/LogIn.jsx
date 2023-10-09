@@ -4,6 +4,7 @@ import { BsFillEyeFill, BsFillEyeSlashFill } from "react-icons/bs";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
 import { toast } from "react-toastify";
+import SocialLogin2 from "./SocialLogin2";
 
 
 const LogIn = () => {
@@ -38,7 +39,7 @@ const LogIn = () => {
                         <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                        <form onSubmit={handleLogin} className="card-body">
+                        <form onSubmit={handleLogin} className="card-body pb-2">
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>
@@ -60,8 +61,11 @@ const LogIn = () => {
                             <div className="form-control mt-6">
                                 <button className="btn btn-primary">Login</button>
                             </div>
-                            <p className="text-center">Don&apos;t have an account? <Link to="/register" className="underline">Register</Link></p>
+                            <p className="text-center text-sm">Don&apos;t have an account? <Link to="/register" className="underline">Register</Link></p>
                         </form>
+                        <div className="pb-4">
+                            <SocialLogin2 />
+                        </div>
                     </div>
                 </div>
             </div>
