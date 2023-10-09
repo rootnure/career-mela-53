@@ -13,7 +13,7 @@ const Service = ({ service, isEven }) => {
         <>
             <div className={`flex ${isEven && "justify-end"}`}>
                 <div className='w-9/12'>
-                    <div className={`card group card-compact border-2 rounded-lg ${!isEven ? "flex-row" : "flex-row-reverse"}`}>
+                    <div className={`card group card-compact border border-cyan-200 rounded-lg ${!isEven ? "flex-row" : "flex-row-reverse"}`}>
                         <div className="relative">
                             <figure className='h-60 w-80 relative'>
                                 <img src={img} alt={`${type} Thumbnail`} className='w-full transition-all duration-300 group-hover:scale-110' />
@@ -28,7 +28,7 @@ const Service = ({ service, isEven }) => {
                             <div className='flex flex-grow'>
                                 <div className={`${!isEven && "text-right"} space-y-2`}>
                                     <h2 className={`text-3xl font-bold ${isEven ? "bg-gradient-to-l" : "bg-gradient-to-r"} from-cyan-500 to-blue-500 text-transparent bg-clip-text w-fit ${!isEven && "ms-auto"}`}>{type}</h2>
-                                    <p className='h-[calc(100%-50px)] flex items-center leading-6'>{short_description}</p>
+                                    <p className='h-[calc(100%-50px)] flex items-center leading-6 text-base'>{short_description}</p>
                                 </div>
                             </div>
                             <div className={`card-actions ${!isEven && "justify-end"}`}>
