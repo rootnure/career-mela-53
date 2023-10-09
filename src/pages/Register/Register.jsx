@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { BsFillEyeFill, BsFillEyeSlashFill } from "react-icons/bs";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
+import { toast } from "react-toastify";
 
 
 const Register = () => {
@@ -26,6 +27,7 @@ const Register = () => {
             .then(() => {
                 updateInfo(name, photoURL)
                     .then(() => {
+                        toast.success("Welcome " + name);
                         navigate('/');
                     })
                     .catch(err => console.error(err))

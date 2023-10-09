@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { BsFillEyeFill, BsFillEyeSlashFill } from "react-icons/bs";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
+import { toast } from "react-toastify";
 
 
 const LogIn = () => {
@@ -18,7 +19,10 @@ const LogIn = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
         signIn(email, password)
-            .then(() => navigate("/"))
+            .then(() => {
+                toast.success('Successfully logged in');
+                navigate("/");
+            })
             .catch(err => console.error(err))
     }
 

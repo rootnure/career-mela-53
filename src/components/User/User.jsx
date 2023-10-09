@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 
 const User = () => {
@@ -11,7 +12,10 @@ const User = () => {
 
     const handleLogOut = () => {
         logOut()
-            .then(() => navigate("/"))
+            .then(() => {
+                toast.error("Logout successfully")
+                navigate("/");
+            })
             .catch(err => console.error(err))
     }
 

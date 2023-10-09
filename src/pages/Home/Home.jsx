@@ -2,6 +2,8 @@ import { Helmet } from "react-helmet-async";
 import Header from "../../components/Header/Header";
 import Services from "../../components/Services/Services";
 import RightSidebar from "../../components/RightSidebar/RightSidebar";
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Home = () => {
@@ -17,6 +19,18 @@ const Home = () => {
                     <RightSidebar></RightSidebar>
                 </div>
             </div>
+            <ToastContainer
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="colored"
+            />
         </div>
     );
 };
