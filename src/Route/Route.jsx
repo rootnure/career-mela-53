@@ -2,10 +2,9 @@ import { createBrowserRouter } from "react-router-dom";
 import Root from "../Root/Root";
 import Home from "../pages/Home/Home";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
-import Register from "../pages/Register/Register";
-import LogIn from "../pages/LogIn/LogIn";
 import ServiceDetails from "../pages/ServiceDetails/ServiceDetails";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import LoginRegisterPage from "../pages/LogIn/LogInRegisterPage";
 
 const router = createBrowserRouter([
     {
@@ -54,12 +53,8 @@ const router = createBrowserRouter([
                 element: <PrivateRoute><div>Profile</div></PrivateRoute>,
             },
             {
-                path: "/register",
-                element: <Register />,
-            },
-            {
-                path: "/login",
-                element: <LogIn />,
+                path: "/loginRegister",
+                element: <LoginRegisterPage></LoginRegisterPage>,
             },
         ]
     },

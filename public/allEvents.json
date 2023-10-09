@@ -1,356 +1,98 @@
 [
     {
-        "id": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p",
-        "img": [
-            "https://i.ibb.co/sQ0RSvp/software-engineer.jpg"
-        ],
-        "title": "Software Engineer",
-        "description": "A Software Engineer is responsible for designing, developing, and maintaining software applications and systems. They analyze user requirements, create detailed specifications, and write efficient, clean, and well-documented code. Software Engineers collaborate with cross-functional teams, conduct debugging and testing, and continuously improve software performance. They stay updated with the latest industry trends and emerging technologies to ensure software remains cutting-edge and secure. Problem-solving skills and a deep understanding of programming languages and software development methodologies are essential. Software Engineers play a crucial role in shaping innovative solutions, enhancing user experiences, and contributing to the success of projects and organizations.",
-        "offer_price": "$90,000 - $110,000 per year",
-        "company": "TechCo, Inc.",
-        "job_location": "San Francisco, CA",
-        "technical_qualifications": [
-            "Bachelor's degree in Computer Science",
-            "Proficiency in Java and Python",
-            "Experience with web development frameworks",
-            "Strong problem-solving skills"
-        ]
+        "id": "1s1",
+        "img": "https://i.ibb.co/sQ0RSvp/software-engineer.jpg",
+        "category": "Seminar",
+        "title": "Seminar on Career in Software Testing",
+        "description": "Software testing isn't just about finding bugs or getting things done by looking at some random checklist. Apart from these, many things are involved in it.",
+        "motivation": "Something interesting is waiting for the students in this seminar, to know which one must attend the seminar.",
+        "speaker": {
+            "name": "Riz Hossain",
+            "designation": "CEO & Founder Automation",
+            "company": "Solutionz Inc, Canada"
+        },
+        "event_info": {
+            "location": "International Conference Center, Dhaka",
+            "date": "November 2, 2023",
+            "time": "11:00 AM (GMT+6)",
+            "reg_fee": 100,
+            "reg_deadline": "October 30, 2023"
+        }
     },
     {
-        "id": "q6r7s8t9u0v1w2x3y4z5a1b2c3d4e5f6",
-        "img": [
-            "https://i.ibb.co/SnSvCDX/graphic-designer.jpg"
-        ],
-        "title": "Graphic Designer",
-        "description": "A Graphic Designer is a creative professional responsible for crafting visually appealing and impactful designs across various media. They collaborate with clients or teams, using software like Adobe Creative Suite, to create engaging visuals for websites, marketing collateral, and branding materials. Graphic Designers ensure designs align with brand identity, paying attention to details like color schemes, typography, and layout. They stay updated with design trends and technologies to produce innovative work and play a pivotal role in shaping a company's image and influencing audience perceptions through compelling visual storytelling. Strong creativity, an eye for aesthetics, and excellent communication skills are crucial for success in this role.",
-        "offer_price": "$50,000 - $70,000 per year",
-        "company": "DesignMasters, LLC",
-        "job_location": "New York, NY",
-        "technical_qualifications": [
-            "Bachelor's degree in Graphic Design or related field",
-            "Proficiency in Adobe Creative Suite",
-            "Strong portfolio of design work",
-            "Excellent creativity and attention to detail"
-        ]
+        "id": "2w1",
+        "img": "https://i.ibb.co/rv21G7g/webinar1.jpg",
+        "category": "Webinar",
+        "title": "Future skills to bridge the gap between Industry & Academia",
+        "description": "UIU & we are going to jointly organize a Webinar titled 'Future skills to bridge the gap between Industry & Academia'",
+        "motivation": "To know details about the future skill of Industry please join the webinar in the following schedule.",
+        "speaker": {
+            "name": "Dr. Khandoker M. Rahman",
+            "designation": "Associate Professor",
+            "company": "United International University"
+        },
+        "event_info": {
+            "location": "https://www.facebook.com/uiu/event/webinar-5/",
+            "date": "October 12, 2023",
+            "time": "8:00 PM (GMT+6)",
+            "reg_fee": 0,
+            "reg_deadline": "October 11, 2023"
+        }
     },
     {
-        "id": "g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v",
-        "img": [
-            "https://i.ibb.co/YcXJfXF/marketing-manager.jpg"
-        ],
-        "title": "Marketing Manager",
-        "description": "A Marketing Manager is a key player in developing and executing marketing strategies to promote products or services effectively. They lead teams to plan and implement advertising, digital campaigns, and brand initiatives. Marketing Managers analyze market trends, competition, and customer insights to formulate marketing plans that drive business growth. They manage budgets, oversee creative content production, and measure campaign performance to optimize results. Strong leadership, strategic thinking, and excellent communication skills are essential for success in this role. Marketing Managers play a vital role in enhancing brand visibility, increasing market share, and achieving revenue targets while ensuring marketing efforts align with the company's objectives and values.",
-        "offer_price": "$80,000 - $100,000 per year",
-        "company": "MarketWise Solutions",
-        "job_location": "Los Angeles, CA",
-        "technical_qualifications": [
-            "Bachelor's degree in Marketing or related field",
-            "Experience with digital marketing tools and analytics",
-            "Excellent written and verbal communication skills",
-            "Strategic thinking and problem-solving abilities"
-        ]
+        "id": "3wo1",
+        "img": "https://i.ibb.co/D9v6Vd3/workshop.jpg",
+        "category": "Workshop",
+        "title": "Workshop on 3D Design and Printing Pipeline || FabLab",
+        "description": "FabLab & we are going to jointly organize a Workshop on 3D Design and Printing Pipeline. This workshop is perfect for anyone who wants to learn about this exciting technology, whether you are a beginner or have some prior experience with 3D design and printing.",
+        "motivation": "Don't miss out on this valuable opportunity to develop your skills and expand your knowledge in this growing field. If you wish to become an entrepreneur, this workshop may give you new business ideas and knowledge required to be successful in that.",
+        "speaker": {
+            "name": "Mr. Jahid Hasan",
+            "designation": "Lecturer",
+            "company": "Daffodil International University"
+        },
+        "event_info": {
+            "location": "Ground Floor of Innovation Lab, DIU-DSC",
+            "date": "October 17, 2023",
+            "time": "2:00 PM (GMT+6)",
+            "reg_fee": 200,
+            "reg_deadline": "October 15, 2023"
+        }
     },
     {
-        "id": "w2x3y4z5a1b2c3d4e5f6g7h8i9j0k1l2",
-        "img": [
-            "https://i.ibb.co/jRkjbMk/data-analyst.jpg"
-        ],
-        "title": "Data Analyst",
-        "description": "Data Analyst is a responsible for collecting, processing, and interpreting data to provide valuable insights and support data-driven decision-making. They utilize statistical techniques, data visualization tools, and programming languages such as SQL to extract and analyze large datasets. Data Analysts identify trends, patterns, and anomalies in data, generating reports and recommendations to inform business strategies. They work closely with cross-functional teams to address specific data-related queries and contribute to the improvement of data quality and accessibility. Strong analytical skills, proficiency in data manipulation, and effective communication are vital in this role. Data Analysts play a critical role in helping organizations make informed choices and optimize their operations.",
-        "offer_price": "$60,000 - $80,000 per year",
-        "company": "Data Insights, Inc.",
-        "job_location": "Chicago, IL",
-        "technical_qualifications": [
-            "Bachelor's degree in Data Science or related field",
-            "Proficiency in SQL",
-            "Data visualization skills",
-            "Statistical analysis expertise"
-        ]
+        "id": "4wo1",
+        "img": "https://i.ibb.co/D9v6Vd3/workshop.jpg",
+        "category": "Workshop",
+        "title": "Workshop on 'Quality Research and Impactful Publications'",
+        "description": "Research means to carefully analyze the problems or to do a detailed study of the specific problems, by making use of special scientific methods. Research papers are an excellent platform to disseminate a novel finding to a general or focused audience, which may be interested in replicating the experiments; identifying advanced applications for the finding, etc. as well as to popularize your research to the world and prevent duplication of the study.",
+        "motivation": "Register for 'Quality Research and Impactful Publications' to avail these opportunities.",
+        "speaker": {
+            "name": "Dr. Mohammad Shamsul Arefin",
+            "designation": "Professor, Department of CSE",
+            "company": "Daffodil International University (Lien from CUET)"
+        },
+        "event_info": {
+            "location": "Ground Floor of Innovation Lab, DIU-DSC",
+            "date": "November 30, 2023",
+            "time": "11:00 AM (GMT+6)",
+            "reg_fee": 350,
+            "reg_deadline": "November 29, 2023"
+        }
     },
     {
-        "id": "m3n4o5p6q7r8s9t0u1v2w3x4y5z6a1b",
-        "img": [
-            "https://i.ibb.co/520DVGd/customer-support-specialist.jpg"
-        ],
-        "title": "Customer Support Specialist",
-        "description": "A Customer Support Specialist is a frontline professional who ensures customer satisfaction by addressing inquiries and resolving issues effectively. They provide exceptional service through various channels, such as phone, email, chat, or in-person interactions. Customer Support Specialists empathetically listen to customer concerns, provide accurate information, troubleshoot problems, and escalate complex issues when necessary. They maintain comprehensive knowledge of products or services and strive to exceed customer expectations. Excellent communication skills, problem-solving abilities, and patience are essential in this role. Customer Support Specialists play a vital role in building and maintaining positive customer relationships, enhancing brand loyalty, and ensuring a high level of customer satisfaction.",
-        "offer_price": "$40,000 - $50,000 per year",
-        "company": "SupportWave, LLC",
-        "job_location": "Austin, TX",
-        "technical_qualifications": [
-            "High school diploma or equivalent",
-            "Excellent communication skills",
-            "Familiarity with CRM systems",
-            "Problem-solving and conflict resolution abilities"
-        ]
-    },
-    {
-        "id": "2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7",
-        "img": [
-            "https://i.ibb.co/85h6vNt/project-manager.jpg"
-        ],
-        "title": "Project Manager",
-        "description": "A Project Manager is a responsible leader overseeing the planning, execution, and completion of projects within an organization. They define project scope, objectives, and deliverables, create project plans, allocate resources, and set timelines. Project Managers coordinate cross-functional teams, communicate project status, and manage budgets and risks to ensure successful project outcomes. They facilitate collaboration, resolve issues, and adapt to changing requirements. Strong leadership, organizational, and problem-solving skills are vital in this role. Project Managers play a critical role in achieving project goals, optimizing processes, and delivering projects on time and within budget while ensuring client satisfaction and meeting organizational objectives.",
-        "offer_price": "$70,000 - $90,000 per year",
-        "company": "ProjectPro, Inc.",
-        "job_location": "Seattle, WA",
-        "technical_qualifications": [
-            "Bachelor's degree in Project Management or related field",
-            "PMP certification",
-            "Strong leadership skills",
-            "Experience with project management software"
-        ]
-    },
-    {
-        "id": "5f6g7h8i9j0k1l2m3n4o4p6q7r8s9t",
-        "img": [],
-        "title": "UX Designer",
-        "description": "Design user-friendly and visually appealing interfaces that enhance the user experience.",
-        "offer_price": "$75,000 - $95,000 per year",
-        "company": "UserXperience, Inc.",
-        "job_location": "Boston, MA",
-        "technical_qualifications": [
-            "Bachelor's degree in Design or related field",
-            "Proficiency in UX/UI design tools",
-            "Strong portfolio of user-centric design work"
-        ]
-    },
-    {
-        "id": "0u1v2w3x4y5z6a1b2c3d4e5f6g7h8i",
-        "img": [],
-        "title": "Financial Analyst",
-        "description": "Analyze financial data, prepare reports, and provide insights to support financial decision-making.",
-        "offer_price": "$65,000 - $85,000 per year",
-        "company": "FinanceWizards, LLC",
-        "job_location": "New Jersey, NJ",
-        "technical_qualifications": [
-            "Bachelor's degree in Finance or related field",
-            "Proficiency in financial modeling and analysis",
-            "Advanced Excel skills"
-        ]
-    },
-    {
-        "id": "9j0k1l2m3n4o5p6q7r8s8t0u1v2w3x",
-        "img": [],
-        "title": "Sales Manager",
-        "description": "Lead and motivate sales teams to achieve revenue targets and drive business growth.",
-        "offer_price": "$90,000 - $120,000 per year",
-        "company": "SalesMasters, Inc.",
-        "job_location": "Houston, TX",
-        "technical_qualifications": [
-            "Bachelor's degree in Sales or related field",
-            "Proven sales management experience",
-            "Strategic sales planning"
-        ]
-    },
-    {
-        "id": "4y5z6a1b2c3d4e5f6g7h8i9j0k1l2m",
-        "img": [],
-        "title": "HR Manager",
-        "description": "Manage human resources functions, including recruitment, employee relations, and HR policies.",
-        "offer_price": "$80,000 - $100,000 per year",
-        "company": "HRPro, Inc.",
-        "job_location": "Dallas, TX",
-        "technical_qualifications": [
-            "Bachelor's degree in HR Management or related field",
-            "HR certification (SHRM/HRPA)",
-            "Strong knowledge of labor laws and regulations"
-        ]
-    },
-    {
-        "id": "3n4o5p6q7r8s9t0u1v2w3x4y5z6a1",
-        "img": [],
-        "title": "Nurse Practitioner",
-        "description": "Provide advanced nursing care, diagnose illnesses, and develop treatment plans for patients.",
-        "offer_price": "$90,000 - $110,000 per year",
-        "company": "HealthCare Plus",
-        "job_location": "Los Angeles, CA",
-        "technical_qualifications": [
-            "Master's degree in Nursing",
-            "Nurse Practitioner license",
-            "Clinical experience in healthcare settings"
-        ]
-    },
-    {
-        "id": "b2c3d4e5f6g7h8i9j0k1l2m3n4o5p",
-        "img": [],
-        "title": "Product Manager",
-        "description": "Lead product development, define product road maps, and drive product strategy to meet market needs.",
-        "offer_price": "$100,000 - $120,000 per year",
-        "company": "ProductVision, Inc.",
-        "job_location": "San Diego, CA",
-        "technical_qualifications": [
-            "Bachelor's degree in Business or related field",
-            "Proven product management experience",
-            "Strong analytical and strategic thinking skills"
-        ]
-    },
-    {
-        "id": "6q7r8s9t0u1v2w3x4y5z5a1b2c3d4",
-        "img": [],
-        "title": "Quality Assurance Engineer",
-        "description": "Ensure software and products meet quality standards through testing and quality control processes.",
-        "offer_price": "$70,000 - $90,000 per year",
-        "company": "QualityTech Solutions",
-        "job_location": "Austin, TX",
-        "technical_qualifications": [
-            "Bachelor's degree in Computer Science or related field",
-            "Experience in software testing",
-            "Familiarity with testing tools (e.g., Selenium, JIRA)"
-        ]
-    },
-    {
-        "id": "e5f6g7h8i9j0k1l2m3n4o4p6q7r8s",
-        "img": [],
-        "title": "Social Media Manager",
-        "description": "Develop and execute social media strategies to enhance brand presence and engagement.",
-        "offer_price": "$60,000 - $80,000 per year",
-        "company": "SocialBuzz, Inc.",
-        "job_location": "Chicago, IL",
-        "technical_qualifications": [
-            "Bachelor's degree in Marketing or related field",
-            "Proven social media management experience",
-            "Familiarity with social media analytics tools"
-        ]
-    },
-    {
-        "id": "9t0u1v2w3x4y5z6a1b2c3d4e5f6g7",
-        "img": [],
-        "title": "Legal Counsel",
-        "description": "Provide legal advice, draft legal documents, and represent the company in legal matters.",
-        "offer_price": "$100,000 - $120,000 per year",
-        "company": "LegalWise, LLC",
-        "job_location": "Miami, FL",
-        "technical_qualifications": [
-            "Juris Doctor (JD) degree",
-            "State Bar license",
-            "Experience in corporate law"
-        ]
-    },
-    {
-        "id": "2w3x4y5z6a1b2c3d4e5f6g7h8i9j0",
-        "img": [],
-        "title": "Mechanical Engineer",
-        "description": "Design, analyze, and develop mechanical systems and components for various applications.",
-        "offer_price": "$80,000 - $100,000 per year",
-        "company": "Mechatronix, Inc.",
-        "job_location": "Detroit, MI",
-        "technical_qualifications": [
-            "Bachelor's degree in Mechanical Engineering",
-            "Proficiency in CAD software",
-            "Experience in product design"
-        ]
-    },
-    {
-        "id": "h8i9j0k1l2m3n4o5p6q7r8s8t0u1v",
-        "img": [],
-        "title": "Operations Manager",
-        "description": "Oversee daily operations, optimize processes, and ensure efficiency within the organization.",
-        "offer_price": "$90,000 - $110,000 per year",
-        "company": "OperateXcellence, LLC",
-        "job_location": "Atlanta, GA",
-        "technical_qualifications": [
-            "Bachelor's degree in Business or related field",
-            "Proven operations management experience",
-            "Process improvement expertise"
-        ]
-    },
-    {
-        "id": "k1l2m3n4o5p6q7r8s9t0u1v2w3x4y",
-        "img": [],
-        "title": "Pharmacist",
-        "description": "Dispense medications, provide drug information, and ensure patient safety in pharmacy settings.",
-        "offer_price": "$90,000 - $110,000 per year",
-        "company": "PharmaCare, Inc.",
-        "job_location": "Phoenix, AZ",
-        "technical_qualifications": [
-            "Doctor of Pharmacy (PharmD) degree",
-            "Pharmacist license",
-            "Clinical pharmacy experience"
-        ]
-    },
-    {
-        "id": "5z6a1b2c3d4e5f6g7h8i9j0k1l2m3",
-        "img": [],
-        "title": "Cybersecurity Analyst",
-        "description": "Protect the organization's IT infrastructure by identifying and mitigating security threats.",
-        "offer_price": "$80,000 - $100,000 per year",
-        "company": "SecureNet Systems",
-        "job_location": "Denver, CO",
-        "technical_qualifications": [
-            "Bachelor's degree in Cybersecurity or related field",
-            "Certifications such as CISSP, CompTIA Security+",
-            "Experience in threat detection and response"
-        ]
-    },
-    {
-        "id": "n4o5p6q7r8s9t0u1v2w3x4y5z5a1b",
-        "img": [],
-        "title": "Electrician",
-        "description": "Install, maintain, and repair electrical systems and equipment in residential and commercial settings.",
-        "offer_price": "$50,000 - $70,000 per year",
-        "company": "PowerTech Electric",
-        "job_location": "Portland, OR",
-        "technical_qualifications": [
-            "Electrician certification",
-            "Experience in electrical installations and troubleshooting",
-            "Knowledge of electrical codes and safety practices"
-        ]
-    },
-    {
-        "id": "2c3d4e5f6g7h8i9j0k1l2m3n4o5p",
-        "img": [],
-        "title": "Registered Nurse",
-        "description": "Provide compassionate patient care, administer medications, and collaborate with healthcare teams.",
-        "offer_price": "$70,000 - $90,000 per year",
-        "company": "HealthCare Connect",
-        "job_location": "Nashville, TN",
-        "technical_qualifications": [
-            "Bachelor's degree in Nursing",
-            "Registered Nurse (RN) license",
-            "Clinical experience in healthcare settings"
-        ]
-    },
-    {
-        "id": "6q7r8s9t0u1v2w3x4y5z6a1b2c3d",
-        "img": [],
-        "title": "Supply Chain Manager",
-        "description": "Oversee logistics, inventory management, and distribution to ensure efficient supply chain operations.",
-        "offer_price": "$85,000 - $105,000 per year",
-        "company": "SupplyLink, Inc.",
-        "job_location": "Minneapolis, MN",
-        "technical_qualifications": [
-            "Bachelor's degree in Supply Chain Management or related field",
-            "Proven supply chain management experience",
-            "Knowledge of supply chain software and systems"
-        ]
-    },
-    {
-        "id": "4e5f6g7h8i9j0k1l2m3n4o4p6q7r",
-        "img": [],
-        "title": "Civil Engineer",
-        "description": "Plan and design infrastructure projects, ensuring safety, compliance, and project success.",
-        "offer_price": "$75,000 - $95,000 per year",
-        "company": "CityStructures Engineering",
-        "job_location": "Raleigh, NC",
-        "technical_qualifications": [
-            "Bachelor's degree in Civil Engineering",
-            "Professional Engineer (PE) license",
-            "Experience in civil engineering projects"
-        ]
-    },
-    {
-        "id": "8s9t0u1v2w3x4y5z6a1b2c3d4e5f",
-        "img": [],
-        "title": "Biomedical Scientist",
-        "description": "Conduct research, analyze medical data, and contribute to advancements in healthcare and medicine.",
-        "offer_price": "$80,000 - $100,000 per year",
-        "company": "BioTech Innovations",
-        "job_location": "San Jose, CA",
-        "technical_qualifications": [
-            "Master's or Ph.D. in Biomedical Science or related field",
-            "Research experience in biomedical science",
-            "Knowledge of laboratory techniques and equipment"
-        ]
+        "id": "5jp1",
+        "img": "https://i.ibb.co/sWPQY6F/job-placement.jpg",
+        "category": "Job Placement",
+        "title": "Register now to join 'DIU Job Utsob-2023' & crack your dream job!!",
+        "description": "The event aims to explore Job and Internship Placements Opportunities for our DIU Graduating Students of different disciplines, where we are expecting about 250 employers from 35 individual Job-Industry segments will participate with their on-going  job openings, Spot Job Interviews, Resume Collections for future references and Career Grooming workshops. ",
+        "motivation": "You are invited to register for this mega Job Utsob, appear for the shortlisted recruitment process, and crack a dream job as available.",
+        "speaker": "",
+        "event_info": {
+            "location": "Daffodil International University-DSC",
+            "date": "November 27-28, 2023",
+            "time": "8:30 AM (GMT+6)",
+            "reg_fee": 500,
+            "reg_deadline": "November 25, 2023"
+        }
     }
 ]

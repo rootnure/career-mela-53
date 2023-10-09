@@ -35,7 +35,7 @@ const User = () => {
                         </ul>
                     </div>
                     :
-                    <Link to="/login"><button className="btn">Login</button></Link>
+                    <Link to="/loginRegister"><button className="btn">Login</button></Link>
             }
         </>
     );

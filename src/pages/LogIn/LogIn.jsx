@@ -1,10 +1,8 @@
-import { Helmet } from "react-helmet-async";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { BsFillEyeFill, BsFillEyeSlashFill } from "react-icons/bs";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
 import { toast } from "react-toastify";
-import SocialLogin2 from "./SocialLogin2";
 
 
 const LogIn = () => {
@@ -12,8 +10,6 @@ const LogIn = () => {
     const { signIn } = useContext(AuthContext);
 
     const location = useLocation();
-
-    console.log(location);
 
     const [isPasswordVisible, setIsPasswordVisible] = useState(false);
 
@@ -31,54 +27,35 @@ const LogIn = () => {
                 toast.success('Successfully logged in');
                 navigate(location?.state ? location.state : "/");
             })
-            .catch(err => console.error(err))
+            .catch(err => {
+                loadingText.classList.add('hidden');
+                if (err.message.toLowerCase().includes("invalid")) toast.error("Invalid Email or Password.");
+            })
     }
 
     return (
-        <div>
-            <Helmet>
-                <title>Login | Job Utsob</title>
-            </Helmet>
-            <div id="loadingText" className="fixed top-0 left-0 right-0 w-fit mx-auto z-[500] bg-[#fff384] hidden">
-                <p className="px-2">Loading. Please wait...</p>
-            </div>
-            <div className="hero bg-base-200 min-h-[calc(100vh-175px)]">
-                <div className="hero-content flex-col lg:flex-row-reverse">
-                    <div className="text-center lg:text-left">
-                        <h1 className="text-5xl font-bold">Login now!</h1>
-                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                    </div>
-                    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                        <form onSubmit={handleLogin} className="card-body pb-2">
-                            <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text">Email</span>
-                                </label>
-                                <input type="email" name="email" placeholder="Email Address" className="input input-bordered" required />
-                            </div>
-                            <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text">Password</span>
-                                </label>
-                                <div className="relative">
-                                    <input type={isPasswordVisible ? "text" : "password"} name="password" placeholder="Password" className="input input-bordered w-full" required />
-                                    <span onClick={() => setIsPasswordVisible(!isPasswordVisible)} className="absolute top-0 bottom-0 right-0 px-3 flex items-center cursor-pointer">{isPasswordVisible ? <BsFillEyeFill></BsFillEyeFill> : <BsFillEyeSlashFill></BsFillEyeSlashFill>}</span>
-                                </div>
-                                <label className="label">
-                                    <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-                                </label>
-                            </div>
-                            <div className="form-control mt-6">
-                                <button className="btn btn-primary">Login</button>
-                            </div>
-                            <p className="text-center text-sm">Don&apos;t have an account? <Link to="/register" className="underline">Register</Link></p>
-                        </form>
-                        <div className="pb-4">
-                            <SocialLogin2 />
-                        </div>
+        <div className="h-full w-96 bg-white flex items-center rounded-l-lg">
+            <form onSubmit={handleLogin} className="card-body pb-2">
+                <h2 className="text-4xl font-bold text-center">Log In</h2>
+                <div className="form-control">
+                    <label className="label">
+                        <span className="label-text">Email</span>
+                    </label>
+                    <input type="email" name="email" placeholder="Email Address" className="input input-bordered" required />
+                </div>
+                <div className="form-control">
+                    <label className="label">
+                        <span className="label-text">Password</span>
+                    </label>
+                    <div className="relative">
+                        <input type={isPasswordVisible ? "text" : "password"} name="password" placeholder="Password" className="input input-bordered w-full" required />
+                        <span onClick={() => setIsPasswordVisible(!isPasswordVisible)} className="absolute top-0 bottom-0 right-0 px-3 flex items-center cursor-pointer">{isPasswordVisible ? <BsFillEyeFill></BsFillEyeFill> : <BsFillEyeSlashFill></BsFillEyeSlashFill>}</span>
                     </div>
                 </div>
-            </div>
+                <div className="form-control mt-6">
+                    <button className="btn btn-primary">Login</button>
+                </div>
+            </form>
         </div>
     );
 };
