@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import Event from "./Event";
 import { Helmet } from "react-helmet-async";
 import RightSidebar from "../../components/RightSidebar/RightSidebar";
@@ -25,7 +25,7 @@ const EventsByCategory = () => {
                         {
                             events.length < 1 &&
                             <div className="col-span-2 flex justify-center">
-                                <button className="my-btn">Go To All Events</button>
+                                <Link to="/upcomingEvents"><button className="my-btn">Go To All Events</button></Link>
                             </div>
                         }
                     </div>
