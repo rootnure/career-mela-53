@@ -1,14 +1,22 @@
 import PropTypes from 'prop-types';
 import { BsFillPersonFill, BsFillPinMapFill, BsCalendarEvent, BsCurrencyDollar } from "react-icons/bs";
+import { storeAppliedEvents } from '../../localstorage';
+import { toast } from 'react-toastify';
 
 
 const Event = ({ event }) => {
 
-    const { img, title, description, motivation, speaker, event_info } = event;
+    const { id, img, title, description, motivation, speaker, event_info } = event;
     const { location, date, time, reg_fee, reg_deadline } = event_info;
     const { name, designation, company } = speaker;
 
-    console.log(event)
+    const handleEventApply = () => {
+        if (storeAppliedEvents(id)) {
+            toast.error("Already Applied. Thank you.");
+        } else {
+            toast.success("Applied Successfully");
+        }
+    }
 
     return (
         <>
@@ -52,7 +60,7 @@ const Event = ({ event }) => {
                             </div>}
                     </div>
                     <div className="card-actions justify-center mt-4">
-                        <button className="my-btn">Apply/Register</button>
+                        <button onClick={handleEventApply} className="my-btn">Apply/Register</button>
                     </div>
                 </div>
             </div>

@@ -15,7 +15,7 @@ const UpcomingEvents = () => {
             </Helmet>
             <div className="grid grid-cols-4 gap-6">
                 <div className="col-span-3">
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-2 gap-4 mt-6">
                         {
                             events.map(event => <Event
                                 key={event.id}
