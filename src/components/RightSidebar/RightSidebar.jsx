@@ -15,7 +15,7 @@ const RightSidebar = () => {
     }, []);
 
     return (
-        <div>
+        <div className="md:col-span-2 lg:col-span-1">
             <div className="sticky top-24 flex gap-4 flex-col">
                 <SocialLogin></SocialLogin>
                 <div className="mb-6">
@@ -26,7 +26,7 @@ const RightSidebar = () => {
                         <p className="flex items-center gap-2 border-2 rounded-b-lg p-4"><FaInstagram className="text-4xl text-rose-500"></FaInstagram> Instagram</p>
                     </div>
                 </div>
-                <div>
+                <div className="hidden md:block">
                     <h2 className="text-2xl font-bold mb-4">Top Events</h2>
                     <div className="flex flex-col gap-6">
                         {
@@ -36,7 +36,6 @@ const RightSidebar = () => {
                         }
                     </div>
                 </div>
-                {/* advertisement */}
             </div>
         </div>
     );

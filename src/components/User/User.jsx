@@ -30,6 +30,7 @@ const User = () => {
                             </div>
                         </label>
                         <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content rounded-box w-52 bg-cyan-100">
+                            <li><p className="font-bold">{user.displayName}</p></li>
                             <li><button className="font-bold" onClick={handleLogOut}>Logout</button></li>
                         </ul>
                     </div>

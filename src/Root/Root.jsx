@@ -9,6 +9,7 @@ const Root = () => {
         <div>
             <NavBar />
             <Outlet />
+            <div className="divider"></div>
             <Footer />
             <ToastContainer
                 position="top-right"

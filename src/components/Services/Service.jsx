@@ -10,8 +10,8 @@ const Service = ({ service, isEven }) => {
     return (
         <>
             <div className={`flex ${isEven && "justify-end"}`}>
-                <div className='w-9/12'>
-                    <div data-aos={isEven ? "fade-left" : "fade-right"} className={`card group card-compact border border-cyan-200 rounded-lg ${!isEven ? "flex-row" : "flex-row-reverse"}`}>
+                <div className='w-full flex justify-center lg:w-9/12'>
+                    <div data-aos={isEven ? "fade-left" : "fade-right"} className={`card group card-compact border border-cyan-200 rounded-lg flex-col ${!isEven ? "md:flex-row" : "md:flex-row-reverse"}`}>
                         <div className="relative">
                             <figure className='h-60 w-80 relative rounded-lg'>
                                 <img src={img} alt={`${type} Thumbnail`} className='w-full transition-all duration-300 group-hover:scale-110' />
@@ -24,12 +24,12 @@ const Service = ({ service, isEven }) => {
                         </div>
                         <div className="card-body rounded-b-lg">
                             <div className='flex flex-grow'>
-                                <div className={`${!isEven && "text-right"} space-y-2`}>
-                                    <h2 className={`text-3xl font-bold ${isEven ? "bg-gradient-to-l" : "bg-gradient-to-r"} from-cyan-500 to-blue-500 text-transparent bg-clip-text w-fit ${!isEven && "ms-auto"}`}>{type}</h2>
+                                <div className={`${!isEven && "md:text-right"} space-y-2`}>
+                                    <h2 className={`text-3xl font-bold ${isEven ? "bg-gradient-to-l" : "bg-gradient-to-r"} from-cyan-500 to-blue-500 text-transparent bg-clip-text w-fit ${!isEven && "md:ms-auto"}`}>{type}</h2>
                                     <p className='h-[calc(100%-50px)] flex items-center leading-6 text-base'>{short_description}</p>
                                 </div>
                             </div>
-                            <div className={`card-actions ${!isEven && "justify-end"}`}>
+                            <div className={`card-actions ${!isEven && "md:justify-end"}`}>
                                 <Link to={`/serviceDetails/${id}`}><button className="my-btn bg-gradient-to-l hover:bg-gradient-to-r rounded font-semibold">View Details <span><FaArrowRight></FaArrowRight></span></button></Link>
                             </div>
                         </div>

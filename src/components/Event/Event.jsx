@@ -24,7 +24,7 @@ const Event = ({ event }) => {
 
     return (
         <>
-            <div data-aos="fade-up" data-aos-duration="1500" className="card card-compact bg-base-100 shadow-xl border">
+            <div className="card card-compact bg-base-100 shadow-xl border">
                 <figure><img src={img} alt={title} /></figure>
                 <div className="card-body !text-base">
                     <div className='flex-grow space-y-4'>
