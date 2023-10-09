@@ -1,16 +1,22 @@
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../Logo/Logo";
+import { useContext } from "react";
+import { AuthContext } from "../../provider/AuthProvider";
 
 
 const NavBar = () => {
 
+    const { user } = useContext(AuthContext);
+
     const links = <>
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/upcomingEvents">Upcoming Events</NavLink></li>
-        <>
-            <li><NavLink to="/appliedEvents">Applied Events</NavLink></li>
-            <li><NavLink to="/profile">Profile</NavLink></li>
-        </>
+        {
+            user && <>
+                <li><NavLink to="/appliedEvents">Applied Events</NavLink></li>
+                <li><NavLink to="/profile">Profile</NavLink></li>
+            </>
+        }
     </>
 
     return (

@@ -5,6 +5,7 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Register from "../pages/Register/Register";
 import LogIn from "../pages/LogIn/LogIn";
 import ServiceDetails from "../pages/ServiceDetails/ServiceDetails";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
 const router = createBrowserRouter([
     {
@@ -18,7 +19,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/serviceDetails/:id",
-                element: <ServiceDetails />,
+                element: <PrivateRoute><ServiceDetails /></PrivateRoute>,
                 loader: async ({ params }) => {
                     const res = await fetch("/servicesDetails.json");
                     const data = await res.json();
@@ -41,7 +42,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/appliedEvents",
-                element: <div>Applied Events</div>,
+                element: <PrivateRoute><div>Applied Events</div></PrivateRoute>,
                 loader: async () => {
                     const res = await fetch("/allEvents.json");
                     const allEvents = await res.json();
@@ -50,7 +51,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/profile",
-                element: <div>Profile</div>,
+                element: <PrivateRoute><div>Profile</div></PrivateRoute>,
             },
             {
                 path: "/register",
