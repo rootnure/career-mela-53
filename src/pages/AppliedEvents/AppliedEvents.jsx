@@ -1,23 +1,29 @@
 import { Helmet } from "react-helmet-async";
 import { useLoaderData } from "react-router-dom";
-import Event from "../../components/Event/Event";
 import RightSidebar from "../../components/RightSidebar/RightSidebar";
+import Event from "../../components/Event/Event";
+import { getStoredAppliedEvents } from "../../localstorage";
 
 
-const UpcomingEvents = () => {
+const AppliedEvents = () => {
 
     const events = useLoaderData();
+
+    const appliedEventIds = getStoredAppliedEvents();
+
+    const appliedEvents = events.filter(event => appliedEventIds.includes(event.id));
 
     return (
         <div className="container mx-auto">
             <Helmet>
-                <title>Upcoming Events | Career Mela</title>
+                <title>Applied Events | Career Mela</title>
             </Helmet>
-            <div className="grid grid-cols-4 gap-6">
+            <div className="grid grid-cols-4 gap-6 my-6">
                 <div className="col-span-3">
+                    <h2 className="text-center text-4xl font-bold mb-6">{appliedEvents.length > 1 ? "Applied Events" : "No events applied yet"}</h2>
                     <div className="grid grid-cols-2 gap-4 mt-6">
                         {
-                            events.map(event => <Event
+                            appliedEvents.map(event => <Event
                                 key={event.id}
                                 event={event}></Event>)
                         }
@@ -28,5 +34,4 @@ const UpcomingEvents = () => {
         </div>
     );
 };
-
-export default UpcomingEvents;
+export default AppliedEvents;

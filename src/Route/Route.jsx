@@ -7,6 +7,7 @@ import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import LoginRegisterPage from "../pages/LogIn/LogInRegisterPage";
 import EventsByCategory from "../pages/EventByCategory/EventsByCategory";
 import UpcomingEvents from "../pages/UpcomingEvents/UpcomingEvents";
+import AppliedEvents from "../pages/AppliedEvents/AppliedEvents";
 
 const router = createBrowserRouter([
     {
@@ -48,7 +49,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/appliedEvents",
-                element: <PrivateRoute><div>Applied Events</div></PrivateRoute>,
+                element: <PrivateRoute><AppliedEvents /></PrivateRoute>,
                 loader: async () => {
                     const res = await fetch("/allEvents.json");
                     const allEvents = await res.json();

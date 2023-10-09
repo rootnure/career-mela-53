@@ -1,5 +1,5 @@
 import { Link, useLoaderData } from "react-router-dom";
-import Event from "./Event";
+import Event from "../../components/Event/Event";
 import { Helmet } from "react-helmet-async";
 import RightSidebar from "../../components/RightSidebar/RightSidebar";
 
