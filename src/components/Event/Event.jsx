@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 import { BsFillPersonFill, BsFillPinMapFill, BsCalendarEvent, BsCurrencyDollar } from "react-icons/bs";
-import { storeAppliedEvents } from '../../localstorage';
+import { getStoredAppliedEvents, storeAppliedEvents } from '../../localstorage';
 import { toast } from 'react-toastify';
 import { useContext } from 'react';
 import { AuthContext } from '../../provider/AuthProvider';
 
 
-const Event = ({ event }) => {
+const Event = ({ event, isAppliedPage = true }) => {
 
     const { user } = useContext(AuthContext);
 
@@ -22,15 +22,19 @@ const Event = ({ event }) => {
         }
     }
 
+    const appliedEventIds = getStoredAppliedEvents();
+
+    const isApplied = appliedEventIds.includes(id);
+
     return (
         <>
-            <div className="card card-compact bg-base-100 shadow-xl border">
+            <div data-aos={!isAppliedPage ? "zoom-in" : ""} className="card card-compact bg-base-100 shadow-lg rounded-lg border">
                 <figure><img src={img} alt={title} /></figure>
                 <div className="card-body !text-base">
                     <div className='flex-grow space-y-4'>
                         <h2 className="card-title text-xl">{title}</h2>
-                        <p className="">{description}</p>
-                        <p className='text-red-500 italic font-semibold'>{motivation}</p>
+                        <p className="text-justify">{description}</p>
+                        <p className='text-justify text-red-500 italic font-semibold'>{motivation}</p>
                         <div className='flex items-center gap-2'>
                             <BsCalendarEvent className='text-4xl'></BsCalendarEvent>
                             <div>
@@ -42,7 +46,7 @@ const Event = ({ event }) => {
                             <BsCurrencyDollar className='text-4xl'></BsCurrencyDollar>
                             <div>
                                 <p className='text-sm italic'>Registration Info:</p>
-                                <p>Last Date of Registration: <span className="font-bold text-blue-500">{reg_deadline}</span></p>
+                                <p>Registration Deadline: <span className="font-bold text-blue-500">{reg_deadline}</span></p>
                                 <p>Registration fee: <span className="font-bold text-red-500">{reg_fee ? `$${reg_fee} only` : "Free"}</span></p>
                             </div>
                         </div>
@@ -50,7 +54,7 @@ const Event = ({ event }) => {
                             <BsFillPinMapFill className='text-4xl'></BsFillPinMapFill>
                             <div>
                                 <p className='text-sm italic'>Location:</p>
-                                <p className='font-bold'>{location}</p>
+                                <p className='font-bold'>{location.toLowerCase().includes("http") ? <span> Online [<a className='text-blue-600' href={location}>Click Here</a>]</span> : location}</p>
                             </div>
                         </div>
                         {name &&
@@ -64,7 +68,7 @@ const Event = ({ event }) => {
                             </div>}
                     </div>
                     <div className="card-actions justify-center mt-4">
-                        {user && <button onClick={handleEventApply} className="my-btn">Apply/Register</button>}
+                        {user && (isApplied ? <p className='text-green-500 py-2 text-center'>Applied Successfully</p> : <button onClick={handleEventApply} className="my-btn">Apply/Register</button>)}
                     </div>
                 </div>
             </div>
@@ -73,7 +77,8 @@ const Event = ({ event }) => {
 };
 
 Event.propTypes = {
-    event: PropTypes.object.isRequired
+    event: PropTypes.object.isRequired,
+    isAppliedPage: PropTypes.bool
 }
 
 export default Event;

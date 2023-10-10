@@ -24,12 +24,12 @@ const LoginRegisterPage = () => {
             </div>
             <div className="hero bg-base-200 min-h-[calc(100vh-175px)]">
                 <div className="hero-content h-full">
-                    <div className="flex h-full">
-                        <div className="transition-all duration-300">
+                    <div className={`flex ${isLoginPage ? "flex-col-reverse" : "flex-col"} md:flex-row h-auto md:h-full`}>
+                        <div className={`h-auto w-96 flex items-center p-4 md:rounded-l-lg ${isLoginPage ? "bg-white rounded-b-lg md:rounded-b-none" : "bg-cyan-100 py-12 rounded-t-lg md:rounded-t-none"}`}>
                             {isLoginPage && <LogIn></LogIn>}
                             {!isLoginPage && <RegistrationOverlay handlePageLoading={handlePageLoading}></RegistrationOverlay>}
                         </div>
-                        <div className="transition-all duration-300">
+                        <div className={`h-auto w-96 flex items-center p-4 md:rounded-r-lg ${!isLoginPage ? "bg-white rounded-b-lg md:rounded-b-none" : "bg-cyan-100 py-12 rounded-t-lg md:rounded-t-none"}`}>
                             {!isLoginPage && <Register></Register>}
                             {isLoginPage && <LogInOverlay handlePageLoading={handlePageLoading}></LogInOverlay>}
                         </div>

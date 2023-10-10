@@ -13,7 +13,7 @@ const User = () => {
     const handleLogOut = () => {
         logOut()
             .then(() => {
-                toast.error("Logout successfully")
+                toast.success("Logout successfully")
                 navigate("/");
             })
             .catch(err => console.error(err))

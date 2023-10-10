@@ -20,13 +20,14 @@ const RecentlyApplied = () => {
     return (
         <div className="container mx-auto mt-12">
             <div className="flex gap-6 my-6">
-                <div className="col-span-3 w-full">
-                    <h2 className="text-center text-4xl font-bold pb-6 divider">Recently Applied Events</h2>
+                <div className="w-full">
+                    <h2 className="text-center text-3xl font-bold pb-6 divider">Recently Applied Events</h2>
                     <h3 className="text-lg italic text-gray-500 text-center">{appliedEvents.length < 1 && "Not applied any events yet"}</h3>
-                    <div className="grid grid-cols-2 gap-4 mt-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
                         {
                             appliedEvents.slice(0, 2).map(event => <Event
                                 key={event.id}
+                                isAppliedPage={false}
                                 event={event}></Event>)
                         }
                     </div>

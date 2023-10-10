@@ -22,8 +22,8 @@ const SocialLogin = () => {
     return (
         <>
             {!user &&
-                <div className="mb-6">
-                    <h3 className="text-2xl font-bold mb-4">Login With</h3>
+                <div className="mb-6 md:px-12 lg:px-0">
+                    <h3 className="text-2xl font-bold mb-4 text-center lg:text-left">Login With</h3>
                     <div className='space-y-2'>
                         <div className="space-y-2">
                             <button

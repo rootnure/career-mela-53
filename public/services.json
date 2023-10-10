@@ -16,7 +16,7 @@
         },
         {
             "id": 3,
-            "img": "https://i.ibb.co/5WjbdfG/seminar.jpg",
+            "img": "https://i.ibb.co/NgRFZpB/seminar-sm.jpg",
             "type": "Seminar",
             "short_description": "A small-group discussion or presentation where participants exchange ideas, engage in academic discussions, or explore a particular topic in depth.",
             "cost": "$200 - $500"
@@ -30,7 +30,7 @@
         },
         {
             "id": 5,
-            "img": "https://i.ibb.co/w4XfmtF/training.jpg",
+            "img": "https://i.ibb.co/KWsY3NR/training-sm.jpg",
             "type": "Training Program",
             "short_description": "A structured curriculum designed to teach specific skills, knowledge, or competencies to students, often with a practical focus on preparing them for a particular job or role.",
             "cost": "$500 - $1000"

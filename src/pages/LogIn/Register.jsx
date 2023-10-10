@@ -3,6 +3,7 @@ import { BsFillEyeFill, BsFillEyeSlashFill } from "react-icons/bs";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
 import { toast } from "react-toastify";
+import SocialLogin2 from "./SocialLogin2";
 
 
 const Register = () => {
@@ -58,44 +59,44 @@ const Register = () => {
 
     return (
         <>
-            <div className="h-full w-96 bg-white flex items-center rounded-r-lg">
-                <form onSubmit={handleCreateUser} className="card-body pb-2">
-                    <h2 className="text-4xl font-bold text-center">Register</h2>
-                    <div className="form-control">
-                        <label className="label">
-                            <span className="label-text">Name</span>
-                        </label>
-                        <input type="text" name="name" placeholder="Your Name" className="input input-bordered" required />
+
+            <form onSubmit={handleCreateUser} className="card-body pb-2">
+                <h2 className="text-4xl font-bold text-center">Register</h2>
+                <div className="form-control">
+                    <label className="label">
+                        <span className="label-text">Name</span>
+                    </label>
+                    <input type="text" name="name" placeholder="Your Name" className="input input-bordered" required />
+                </div>
+                <div className="form-control">
+                    <label className="label">
+                        <span className="label-text">Profile Image</span>
+                    </label>
+                    <input type="text" name="photoURL" placeholder="Photo URL (Direct Link)" className="input input-bordered" required />
+                </div>
+                <div className="form-control">
+                    <label className="label">
+                        <span className="label-text">Email</span>
+                    </label>
+                    <input type="email" name="email" placeholder="Email Address" className="input input-bordered" required />
+                </div>
+                <div className="form-control">
+                    <label className="label">
+                        <span className="label-text">Password</span>
+                    </label>
+                    <div className="relative">
+                        <input onChange={handleValidPassword} type={isPasswordVisible ? "text" : "password"} name="password" placeholder="Password" className="input input-bordered w-full" required />
+                        <span onClick={() => setIsPasswordVisible(!isPasswordVisible)} className="absolute top-0 bottom-0 right-0 px-3 flex items-center cursor-pointer">{isPasswordVisible ? <BsFillEyeFill></BsFillEyeFill> : <BsFillEyeSlashFill></BsFillEyeSlashFill>}</span>
                     </div>
-                    <div className="form-control">
-                        <label className="label">
-                            <span className="label-text">Profile Image</span>
-                        </label>
-                        <input type="text" name="photoURL" placeholder="Photo URL (Direct Link)" className="input input-bordered" required />
-                    </div>
-                    <div className="form-control">
-                        <label className="label">
-                            <span className="label-text">Email</span>
-                        </label>
-                        <input type="email" name="email" placeholder="Email Address" className="input input-bordered" required />
-                    </div>
-                    <div className="form-control">
-                        <label className="label">
-                            <span className="label-text">Password</span>
-                        </label>
-                        <div className="relative">
-                            <input onChange={handleValidPassword} type={isPasswordVisible ? "text" : "password"} name="password" placeholder="Password" className="input input-bordered w-full" required />
-                            <span onClick={() => setIsPasswordVisible(!isPasswordVisible)} className="absolute top-0 bottom-0 right-0 px-3 flex items-center cursor-pointer">{isPasswordVisible ? <BsFillEyeFill></BsFillEyeFill> : <BsFillEyeSlashFill></BsFillEyeSlashFill>}</span>
-                        </div>
-                        <label className="label relative">
-                            {errorMsg && <small className="absolute top-3 text-red-400 font-semibold">{errorMsg}</small>}
-                        </label>
-                    </div>
-                    <div className="form-control mt-6">
-                        <button type="submit" id="registerBtn" className="btn btn-primary" disabled>Register</button>
-                    </div>
-                </form>
-            </div>
+                    <label className="label relative">
+                        {errorMsg && <small className="absolute top-3 text-red-400 font-semibold">{errorMsg}</small>}
+                    </label>
+                </div>
+                <div className="form-control mt-6">
+                    <button type="submit" id="registerBtn" className="btn btn-primary" disabled>Register</button>
+                </div>
+                <SocialLogin2></SocialLogin2>
+            </form>
         </>
     );
 };

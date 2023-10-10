@@ -3,6 +3,7 @@ import { BsFillEyeFill, BsFillEyeSlashFill } from "react-icons/bs";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
 import { toast } from "react-toastify";
+import SocialLogin2 from "./SocialLogin2";
 
 
 const LogIn = () => {
@@ -34,7 +35,7 @@ const LogIn = () => {
     }
 
     return (
-        <div className="h-full w-96 bg-white flex items-center rounded-l-lg">
+        <>
             <form onSubmit={handleLogin} className="card-body pb-2">
                 <h2 className="text-4xl font-bold text-center">Log In</h2>
                 <div className="form-control">
@@ -55,8 +56,9 @@ const LogIn = () => {
                 <div className="form-control mt-6">
                     <button className="btn btn-primary">Login</button>
                 </div>
+                <SocialLogin2></SocialLogin2>
             </form>
-        </div>
+        </>
     );
 };
 

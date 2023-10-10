@@ -11,9 +11,9 @@ const Service = ({ service, isEven }) => {
         <>
             <div className={`flex ${isEven && "justify-end"}`}>
                 <div className='w-full flex justify-center lg:w-9/12'>
-                    <div data-aos={isEven ? "fade-left" : "fade-right"} className={`card group card-compact border border-cyan-200 rounded-lg flex-col ${!isEven ? "md:flex-row" : "md:flex-row-reverse"}`}>
+                    <div data-aos="zoom-in" data-aos-duration="500" className={`card group card-compact border border-cyan-200 rounded-lg flex-col ${!isEven ? "md:flex-row" : "md:flex-row-reverse"}`}>
                         <div className="relative">
-                            <figure className='h-60 w-80 relative rounded-lg'>
+                            <figure className='h-60 w-80 relative rounded-lg mx-auto'>
                                 <img src={img} alt={`${type} Thumbnail`} className='w-full transition-all duration-300 group-hover:scale-110' />
                                 <div className={`absolute h-full w-full bg-[#00000000] transition-all duration-300 group-hover:bg-[#00000025] ${isEven ? "rounded-e-lg" : "rounded-s-lg"}`}></div>
                             </figure>
