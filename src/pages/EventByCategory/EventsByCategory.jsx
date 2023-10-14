@@ -13,10 +13,10 @@ const EventsByCategory = () => {
             <Helmet>
                 <title>Available {events.length > 1 ? events[0]?.category + "s" : "Events"} | Career Mela</title>
             </Helmet>
-            <div className="grid grid-cols-4 gap-6">
-                <div className="col-span-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 my-6">
+                <div className="md:col-span-2 lg:col-span-3">
                     <h2 className="text-center text-4xl font-bold mb-6">{events.length > 1 ? "Upcoming " + events[0]?.category + "s" : "No events in this category"}</h2>
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         {
                             events?.map(event => <Event
                                 key={event.id}

@@ -34,7 +34,7 @@ const Services = () => {
                 }
             </div>
             {user && <RecentlyApplied></RecentlyApplied>}
-            <div data-aos="fade-up" data-aos-duration="750" className="bg-cyan-100 rounded-lg md:px-20 mx-1 my-12 p-6" id="review">
+            <div data-aos="fade-up" data-aos-duration="750" className="bg-cyan-100 rounded-lg md:px-20 mx-1 mt-12 p-6" id="review">
                 <h3 className="text-3xl text-center font-bold mb-4">Write a review</h3>
                 <form className="w-full space-y-4">
                     <input type="text" placeholder="Mr./Mrs." className="w-full p-2 rounded" />

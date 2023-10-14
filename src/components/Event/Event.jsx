@@ -28,7 +28,7 @@ const Event = ({ event, isAppliedPage = true }) => {
 
     return (
         <>
-            <div data-aos={!isAppliedPage ? "zoom-in" : ""} className="card card-compact bg-base-100 shadow-lg rounded-lg border">
+            <div data-aos={!isAppliedPage ? "zoom-in" : ""} className="card card-compact bg-base-100 rounded-lg border">
                 <figure><img src={img} alt={title} /></figure>
                 <div className="card-body !text-base">
                     <div className='flex-grow space-y-4'>

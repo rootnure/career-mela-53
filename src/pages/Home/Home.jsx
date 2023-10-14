@@ -13,7 +13,7 @@ const Home = () => {
             </Helmet>
             <Header></Header>
             <div className="container mx-auto">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 my-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 my-6">
                     <Services></Services>
                     <RightSidebar></RightSidebar>
                 </div>
